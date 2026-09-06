@@ -79,7 +79,107 @@ body {
     justify-content: center;
     gap: 10px;
 }
+<!-- أزرار تغيير اللغة -->
+    <div class="lang-switcher">
+        <button class="lang-btn active" onclick="changeLang('fr')">FR</button>
+        <button class="lang-btn" onclick="changeLang('ar')">AR</button>
+        <button class="lang-btn" onclick="changeLang('en')">EN</button>
+    </div>
 
 .diamond {
     font-size: 0.6rem;
+}
+/* تعديل في نمط العرض ليتيح التمرير بين الصفحات رأسياً */
+body {
+    flex-direction: column;
+    gap: 30px;
+    padding: 20px 0;
+    height: auto; /* لكي تتمدد الصفحة كلما أضفنا أقساماً جديدة */
+}
+
+/* تنسيق حاوية صفحة القصة */
+.story-page {
+    width: 90%;
+    max-width: 400px;
+    background-color: var(--cream-bg);
+    border: 2px solid var(--sage-green);
+    border-radius: 6px;
+    padding: 12px;
+    box-sizing: border-box;
+}
+
+/* الإطار الداخلي لصفحة القصة */
+.story-frame {
+    border: 1px solid var(--sage-green);
+    border-radius: 4px;
+    padding: 30px 15px;
+    text-align: center;
+    color: var(--sage-green);
+}
+
+/* عنوان القصة داخل القوس */
+.story-title {
+    font-size: 1.5rem;
+    letter-spacing: 3px;
+    margin: 0 0 25px 0;
+    font-weight: 600;
+    line-height: 1.3;
+}
+
+.story-title span {
+    font-size: 1.7rem;
+}
+
+/* تنسيق نصوص القصة */
+.story-content {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-size: 0.95rem;
+    line-height: 1.8;
+    color: #4a543f; /* درجة أغمق قليلاً من الأخضر لتكون مريحة وسهلة القراءة */
+}
+
+.story-content p {
+    margin-bottom: 18px;
+}
+
+.story-content strong {
+    font-weight: bold;
+    color: var(--sage-green);
+}
+
+/* الفاصل الجمالي الصغير بين الفقرات */
+.divider {
+    font-size: 0.8rem;
+    margin: 15px 0;
+    color: var(--sage-green);
+}
+
+.highlight-text {
+    font-size: 1rem;
+    margin-top: 25px !important;
+}
+
+/* توقيع الشيف */
+.story-signature {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.sig-label {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.75rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #6d785f;
+}
+
+.sig-name {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.85rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: var(--sage-green);
 }
