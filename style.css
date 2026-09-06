@@ -157,3 +157,117 @@ body {
     margin: 5px 0 0 0;
     line-height: 1.4;
 }
+/* تصميم إطار مزخرف فاخر مستوحى من الصور للقصة وصفحة الشكر */
+.story-page {
+    position: relative;
+    background: #ffffff;
+    border: 2px solid #7c9082; /* إطار خارجي أنيق بلون الميرمية الهادئ */
+    padding: 40px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+
+/* إطار مزخرف كلاسيكي فاخر مستوحى من القوائم الأصلية */
+.story-page {
+    position: relative;
+    background: #ffffff;
+    border: 3px double #7c9082; /* إطار مزدوج فاخر بلون الميرمية */
+    padding: 45px 35px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08), inset 0 0 15px rgba(124, 144, 130, 0.05);
+    margin: 40px auto;
+    max-width: 600px
+;
+}
+/* تكبير وتزيين الوردة في أسفل الإطار */
+.story-page::after {
+    content: '❦ ❀ ❦'; /* دمج زهور كلاسيكية لتصبح بارزة */
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #c28859; /* اللون الترابي الفاخر */
+    font-size: 1.8rem; /* تكبير الحجم ليصبح واضحاً وكبيراً */
+    background: #ffffff;
+    padding: 0 15px;
+    letter-spacing: 8px;
+}
+
+/* تكبير الزخرفة العلوية فوق العنوان */
+.story-arch h2::before {
+    content: '❀ ';
+    color: #c28859;
+    font-size: 1.5rem; /* تكبير وردة البداية */
+}
+
+.story-arch h2::after {
+    content: ' ❀';
+    color: #c28859;
+    font-size: 1.5rem; /* تكبير وردة النهاية */
+}
+/* إطار داخلي رفيع يترك مسافة ويعطي طابع الزخرفة الورقية */
+.story-page::before {
+    content: '';
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    right: 8px;
+    bottom: 8px;
+    border: 1px solid #c28859; /* إطار ترابي داخلي */
+    pointer-events: none;
+}
+/* تمركز الإطار في منتصف الشاشة مع تحديد عرض مناسب */
+.story-page {
+    position: relative;
+    background: #ffffff;
+    border: 3px double #7c9082;
+    padding: 50px 40px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08), inset 0 0 15px rgba(124, 144, 130, 0.05);
+    margin: 50px auto; /* تجعل الإطار يتوسط أفقياً وتبه مسافة من الأعلى والأسفل */
+    max-width: 650px;
+    text-align: center; /* تمركز جميع النصوص والكلمات بداخله بشكل افتراضي */
+}
+
+/* تمركز وتنسيق الفقرات داخل الإطار لتكون متناسقة ومتوسطة */
+.story-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* تمركز المحتوى في المنتصف تماماً */
+    justify-content: center;
+}
+
+.story-content p {
+    margin-bottom: 25px;
+    font-size: 1.05rem;
+    color: #2c3e35;
+    text-align: center; /* ضمان توسط أسطر النصوص */
+    max-width: 90%; /* منع النص من الالتصاق بحواف الإطار */
+}
+/* زخرفة هندسية في زوايا الإطار الأربعة لتشبه الزخارف النباتية الكلاسيكية */
+.story-page::after {
+    content: '❖';
+    position: absolute;
+    bottom: 12px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #c28859;
+    font-size: 1.2rem;
+    background: #ffffff;
+    padding: 0 10px;
+    letter-spacing: 5px;
+}
+
+/* إضافة رمز زخرفي في أعلى الإطار تحت العنوان */
+.story-arch h2::before {
+    content: '❦ ';
+    color: #c28859;
+}
+
+.story-arch h2::after {
+    content: ' ❦';
+    color: #c28859;
+}
+/* تحسين تنسيق النصوص داخل الإطار المزخرف */
+.story-content p {
+    margin-bottom: 20px;
+    font-size: 1.05rem;
+    color: #2c3e35;
+}
