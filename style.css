@@ -1,3 +1,104 @@
+/* الحاوية الكبرى للإطار الأبيض الفاخر */
+.brand-section {
+    background: #ffffff;
+    border: 2px solid #556B2F; /* لون أخضر زيتوني كلاسيكي يتناسب مع الغلاف */
+    padding: 45px 25px;
+    margin: 30px auto;
+    max-width: 650px;
+    text-align: center;
+    position: relative;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    border-radius: 6px;
+}
+
+/* الإطار الداخلي الرفيع ليطابق شكل الغلاف الواقعي */
+.brand-section::before {
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    border: 1px solid #556B2F;
+    pointer-events: none;
+    border-radius: 4px;
+}
+
+/* تنسيق الأيقونة الزهرية */
+.floral-icon {
+    font-size: 2rem;
+    color: #556B2F;
+    margin-bottom: 10px;
+}
+
+/* عنوان المحل */
+.brand-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.2rem;
+    color: #2c3e35;
+    margin-bottom: 15px;
+    letter-spacing: 1.5px;
+}
+
+/* النص الفرعي والماسَات */
+.brand-subtitle {
+    font-family: 'Cairo', sans-serif;
+    font-size: 0.9rem;
+    letter-spacing: 3px;
+    color: #556B2F;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+}
+
+.brand-subtitle .diamond {
+    font-size: 0.6rem;
+    color: #c28859;
+}
+/* تحويل الإطار الأبيض ليطابق فخامة الغلاف */
+.hero-card {
+    background: #ffffff;
+    border: 2px solid #4a5d4e;
+    padding: 40px 20px;
+    margin: 30px auto;
+    max-width: 600px;
+    position: relative;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    border-radius: 4px;
+}
+
+/* الإطار الداخلي الرفيع تماماً مثل الغلاف */
+.hero-card::before {
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    border: 1px solid #4a5d4e;
+    pointer-events: none;
+}
+.brand-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    text-align: center;
+    color: #2c3e35;
+    margin: 20px 0;
+    letter-spacing: 2px;
+    position: relative;
+    display: inline-block;
+}
+
+/* زخرفة الأقواس والخطوط الجانبية الفخمة */
+.brand-title::before,
+.brand-title::after {
+    content: " ❧ ";
+    color: #c28859;
+    font-size: 1.2rem;
+    padding: 0 10px;
+    vertical-align: middle;
+}
 /* تطبيق الخطوط الفاخرة على الموقع بالكامل */
 body {
     font-family: 'Cairo', 'Playfair Display', serif !important;
@@ -369,3 +470,27 @@ h1, h2, h3, .category-title, .story-arch h2 {
     color: #666666;
     margin-top: 4px;
 }
+#scrollTopBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+    font-size: 1.2rem;
+    background-color: #c28859;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    cursor: pointer;
+    display: none; /* مخفي افتراضياً حتى يبدأ الزبون بالتمرير */
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: background-color 0.3s ease;
+}
+
+#scrollTopBtn:hover {
+    background-color: #2c3e35;
+}
+

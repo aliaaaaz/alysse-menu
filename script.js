@@ -168,3 +168,25 @@ window.addEventListener('DOMContentLoaded', () => {
     const targetBtn = document.querySelector(`.lang-btn[onclick*="${savedLang}"]`) || document.querySelector('.lang-btn');
     changeLanguage(savedLang, targetBtn);
 });
+// إظهار أو إخفاء زر العودة للأعلى حسب حركة التمرير
+window.onscroll = function() {
+    scrollFunction();
+};
+
+function scrollFunction() {
+    const btn = document.getElementById("scrollTopBtn");
+    if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+        btn.style.display = "flex";
+    } else {
+        btn.style.display = "none";
+    }
+}
+
+// دالة الانتقال السلس لأعلى الصفحة
+function scrollToTop() {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+}
+
