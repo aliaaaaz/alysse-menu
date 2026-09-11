@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
+<!-- استدعاء الخطوط الفاخرة من Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&family=Playfair+Display:ital,wght@0,500;0,700;1,400&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alysse - Salon de Thé</title>
@@ -8,14 +12,13 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-    <!-- أزرار تغيير اللغة في أعلى الصفحة -->
-    <div class="lang-switcher">
-        <button class="lang-btn active" onclick="changeLang('fr')">FR</button>
-        <button class="lang-btn" onclick="changeLang('ar')">AR</button>
-        <button class="lang-btn" onclick="changeLang('en')">EN</button>
-    </div>
-
+<div class="language-switcher" style="text-align: center; padding: 15px; background: #f4f6f4; margin-bottom: 20px;">
+    <button onclick="changeLanguage('fr', this)" class="lang-btn active">Français</button>
+    <button onclick="changeLanguage('en', this)" class="lang-btn">English</button>
+    <button onclick="changeLanguage('ar', this)" class="lang-btn">العربية</button>
+    <button onclick="changeLanguage('it', this)" class="lang-btn">Italiano</button>
+    <button onclick="changeLanguage('de', this)" class="lang-btn">Deutsch</button>
+</div>
     <!-- صفحة الغلاف الترحيبية -->
     <div class="cover-page">
         <div class="cover-border">
@@ -38,7 +41,6 @@
             </div>
         </div>
     </div>
-
     <!-- صفحة القصة -->
     <section class="story-page">
         <div class="story-frame">
@@ -64,7 +66,6 @@
     <section class="menu-category">
         <h2 class="category-title">Petits Déjeuners</h2>
         <p class="section-subtitle">Toutes nos formules sont servies avec une boisson chaude classique au choix, jus d'orange</p>
-
         <!-- Le Parisien -->
         <div class="menu-item">
             <div class="placeholder-img">🥐</div>
@@ -100,7 +101,6 @@
                 <p class="item-desc">Trois mini viennoiseries, panier à pains • Œufs aux choix (au plats ou brouillé, omelette nature) • Accompagnements (beurre, confiture, olive noire, huile d'olive) • Yaourt aux fruits, macaron</p>
             </div>
         </div>
-
         <!-- El Fassi -->
         <div class="menu-item">
             <div class="placeholder-img">🍯</div>
@@ -112,8 +112,8 @@
                 <p class="item-desc">Pain Batbout, Huile d'olive, olive noire • Fromage blanc, Oeufs Khlii</p>
             </div>
         </div>
-
-        <!-- Healthy -->
+                     
+ <!-- Healthy -->
         <div class="menu-item">
             <div class="placeholder-img">🥗</div>
             <div class="item-info">
@@ -124,7 +124,6 @@
                 <p class="item-desc">Mini bol énergie (yaourt grec au granula) • Tartine équilibrée (toast, guacamole, œuf au plat) • Toast plaisir sucrée (beurre de cacahuète, miel, banane) • Detox (orange, carotte, gingembre)</p>
             </div>
         </div>
-
         <!-- Sweet Kids -->
         <div class="menu-item">
             <div class="placeholder-img">🧒</div>
@@ -137,12 +136,10 @@
             </div>
         </div>
     </section>
-
     <!-- قسم الفطور Brunches -->
     <section class="menu-category">
         <h2 class="category-title">Brunches</h2>
         <p class="section-subtitle">Toutes nos brunchs sont servie avec une boisson chaud classique au choix, jus de fruit. jusqu'à 16h</p>
-
         <!-- Brunch 1 -->
         <div class="menu-item">
             <div class="placeholder-img">🥐</div>
@@ -154,7 +151,6 @@
                 <p class="item-desc">Croissant le florentin (œuf brouillé, épinard) • Pain perdu caramel beurre salé • Yaourt au fruit • 3 Mini gâteaux • Potatoes</p>
             </div>
         </div>
-
         <!-- Brunch 2 -->
         <div class="menu-item">
             <div class="placeholder-img">🥞</div>
@@ -179,7 +175,6 @@
             </div>
         </div>
     </section>
-
     <!-- قسم البيض والوجبات À la Carte -->
     <section class="menu-category">
         <h2 class="category-title">Oeufs / Omelettes</h2>
@@ -1802,5 +1797,8 @@
             </div>
         </div>
     </section>
+    
+<script src="script.js"></script>
+
 </body>
 </html>

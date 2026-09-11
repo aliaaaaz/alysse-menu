@@ -1,3 +1,13 @@
+/* تطبيق الخطوط الفاخرة على الموقع بالكامل */
+body {
+    font-family: 'Cairo', 'Playfair Display', serif !important;
+}
+
+/* تخصيص العناوين لتبدو كأنها مطبوعة بأسلوب كلاسيكي فرنسي راقٍ */
+h1, h2, h3, .category-title {
+    font-family: 'Playfair Display', 'Cairo', serif !important;
+    letter-spacing: 0.5px;
+}
 /* تنسيق عام للخلفية وألوان أليس (أخضر ميرمية وكريمي) */
 body {
     background-color: #f4f6f0;
@@ -270,4 +280,92 @@ body {
     margin-bottom: 20px;
     font-size: 1.05rem;
     color: #2c3e35;
+}
+/* 1. جعل جميع العناوين متمركزة في الوسط تماماً على الهواتف والشاشات */
+h1, h2, h3, .category-title, .story-arch h2 {
+    text-align: center !important;
+    width: 100%;
+}
+
+/* 2. تكبير حجم خط الأسعار والأثمنة بنسبة 20% لتكون واضحة ومقروءة بسهولة */
+.price, .item-price, span[class*="price"] {
+    font-size: 1.2rem !important; /* تكبير الخط بنسبة مريحة للعين */
+    font-weight: bold;
+}
+
+/* 3. ضمان ظهور الإطارات الفاخرة بشكل متناسق ولا تختفي على الشاشات الصغيرة */
+.story-page {
+    position: relative;
+    background: #ffffff;
+    border: 3px double #7c9082 !important;
+    padding: 30px 20px !important;
+    margin: 20px auto !important;
+    max-width: 90% !important; /* تتאقلم مع عرض شاشة الهاتف */
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+}
+
+/* إظهار الإطار الداخلي المزخرف على الهاتف أيضاً */
+.story-page::before {
+    content: '';
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    right: 6px;
+    bottom: 6px;
+    border: 1px solid #c28859 !important;
+    pointer-events: none;
+}
+
+/* تثبيت عام للعناصر ومنع تداخلها */
+* {
+    box-sizing: border-box;
+}
+
+/* تنسيق عناصر القائمة والأيقونات بشكل ثابت ومستقر */
+.menu-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    margin-bottom: 20px;
+    border-bottom: 1px dashed #e0e0e0;
+    padding-bottom: 15px;
+}
+
+.placeholder-img {
+    font-size: 1.5rem;
+    min-width: 35px;
+    text-align: center;
+    flex-shrink: 0; /* يمنع الأيقونة من الانكماش أو التحرك العشوائي */
+}
+
+.item-info {
+    flex-grow: 1;
+}
+
+.item-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 5px;
+}
+
+.item-name {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    font-size: 1.15rem;
+    color: #2c3e35;
+}
+
+.item-price {
+    font-weight: bold;
+    color: #c28859;
+    white-space: nowrap; /* يمنع السعر من النزول لسطر جديد */
+    margin-left: 10px;
+}
+
+.item-desc {
+    font-family: 'Cairo', sans-serif;
+    font-size: 0.88rem;
+    color: #666666;
+    margin-top: 4px;
 }
