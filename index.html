@@ -1,17 +1,15 @@
 <!DOCTYPE html>
 <html lang="fr" dir="ltr">
 <head>
-<!-- استدعاء الخطوط الفاخرة من Google Fonts -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&family=Playfair+Display:ital,wght@0,500;0,700;1,400&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alysse - Salon de Thé</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div class="language-switcher" style="text-align: center; padding: 15px; background: #f4f6f4; margin-bottom: 20px;">
+<div class="language-switcher" data-translate-label="languageSwitcherLabel">
     <button onclick="changeLanguage('fr', this)" class="lang-btn active">Français</button>
     <button onclick="changeLanguage('en', this)" class="lang-btn">English</button>
     <button onclick="changeLanguage('ar', this)" class="lang-btn">العربية</button>
@@ -29,16 +27,16 @@
     <section class="story-page">
         <div class="story-frame">
             <div class="story-arch">
-                <h2 class="story-title">L'HISTOIRE<br><span>D'ALYSSE</span></h2>
+                <h2 class="story-title" data-translate="storyTitle">L'HISTOIRE<br><span>D'ALYSSE</span></h2>
             </div>
             <div class="story-content">
-                <p>On raconte qu'il existe, à l'abri des regards,<br>un écrin secret nommé <strong>la fleur d'alysse</strong>.</p>
-                <p>Telle une boîte à bijoux oubliée,<br>ce salon hors du temps murmure des contes<br>où chaque heure est un enchantement.</p>
+                <p data-translate="storyParagraph1" data-story-key>On raconte qu'il existe, à l'abri des regards,<br>un écrin secret nommé <strong>la fleur d'alysse</strong>.</p>
+                <p data-translate="storyParagraph2" data-story-key>Telle une boîte à bijoux oubliée,<br>ce salon hors du temps murmure des contes<br>où chaque heure est un enchantement.</p>
                 <div class="divider">✦</div>
-                <p>Le matin, la magie s'éveille dans la fraîcheur<br>et la simplicité d'un petit-déjeuner<br>floral et réconfortant.</p>
-                <p>Puis vient l'heure des sortilèges gourmands,<br>le plus doux des péchés mignons.</p>
-                <p>Ici, les desserts ne sont pas des gâteaux<br>mais des joyaux à croquer,<br>et les thés de précieux élixirs<br>aux parfums envoûtants.</p>
-                <p class="highlight-text">Entrer chez alysse,<br>c'est succomber à une délicieuse féerie,<br>un conte dont vous êtes le principal gourmand.</p>
+                <p data-translate="storyParagraph3" data-story-key>Le matin, la magie s'éveille dans la fraîcheur<br>et la simplicité d'un petit-déjeuner<br>floral et réconfortant.</p>
+                <p data-translate="storyParagraph4" data-story-key>Puis vient l'heure des sortilèges gourmands,<br>le plus doux des péchés mignons.</p>
+                <p data-translate="storyParagraph5" data-story-key>Ici, les desserts ne sont pas des gâteaux<br>mais des joyaux à croquer,<br>et les thés de précieux élixirs<br>aux parfums envoûtants.</p>
+                <p class="highlight-text" data-translate="storyParagraph6" data-story-key>Entrer chez alysse,<br>c'est succomber à une délicieuse féerie,<br>un conte dont vous êtes le principal gourmand.</p>
             </div>
             <div class="story-signature">
                 <span class="sig-label">Signature</span>
@@ -47,18 +45,18 @@
         </div>
     </section>
 <!-- قسم الفطور الصباحي (البداية الصحيحة) -->
-    <section class="menu-category">
-        <h2 class="category-title">Petits Déjeuners</h2>
+    <section class="menu-category" data-category-id="breakfast">
+        <h2 class="category-title" data-translate="breakfastTitle">Petits Déjeuners</h2>
         <p class="section-subtitle">Toutes nos formules sont servies avec une boisson chaude classique au choix, jus d'orange</p>
         <!-- Le Parisien -->
         <div class="menu-item">
             <div class="placeholder-img">🥐</div>
             <div class="item-info">
                 <div class="item-header">
-                    <h3 class="item-name">Le Parisien</h3>
+                    <h3 class="item-name" data-catalog-key="catalog.breakfast.name.001">Le Parisien</h3>
                     <span class="item-price">45 dh</span>
                 </div>
-                <p class="item-desc">Trois mini viennoiseries, pain grillé • Accompagnements (beurre, confiture, miel, huile d'olive) • Macaron</p>
+                <p class="item-desc" data-catalog-key="catalog.breakfast.description.001">Trois mini viennoiseries, pain grillé • Accompagnements (beurre, confiture, miel, huile d'olive) • Macaron</p>
             </div>
         </div>
 
@@ -67,10 +65,10 @@
             <div class="placeholder-img">🥞</div>
             <div class="item-info">
                 <div class="item-header">
-                    <h3 class="item-name">Le Berbère</h3>
+                    <h3 class="item-name" data-catalog-key="catalog.breakfast.name.002">Le Berbère</h3>
                     <span class="item-price">48 dh</span>
                 </div>
-                <p class="item-desc">Mini crêpes marocaine (msemen, hercha, beghrir) • Pain Batbout, Orange à la cannelle • Accompagnements (amlou, miel, huile d'olive extra vierge)</p>
+                <p class="item-desc" data-catalog-key="catalog.breakfast.description.002">Mini crêpes marocaine (msemen, hercha, beghrir) • Pain Batbout, Orange à la cannelle • Accompagnements (amlou, miel, huile d'olive extra vierge)</p>
             </div>
         </div>
 
@@ -79,10 +77,10 @@
             <div class="placeholder-img">🍳</div>
             <div class="item-info">
                 <div class="item-header">
-                    <h3 class="item-name">Le Jardin d'Alysse</h3>
+                    <h3 class="item-name" data-catalog-key="catalog.breakfast.name.003">Le Jardin d'Alysse</h3>
                     <span class="item-price">59 dh</span>
                 </div>
-                <p class="item-desc">Trois mini viennoiseries, panier à pains • Œufs aux choix (au plats ou brouillé, omelette nature) • Accompagnements (beurre, confiture, olive noire, huile d'olive) • Yaourt aux fruits, macaron</p>
+                <p class="item-desc" data-catalog-key="catalog.breakfast.description.003">Trois mini viennoiseries, panier à pains • Œufs aux choix (au plats ou brouillé, omelette nature) • Accompagnements (beurre, confiture, olive noire, huile d'olive) • Yaourt aux fruits, macaron</p>
             </div>
         </div>
         <!-- El Fassi -->
@@ -90,10 +88,10 @@
             <div class="placeholder-img">🍯</div>
             <div class="item-info">
                 <div class="item-header">
-                    <h3 class="item-name">El Fassi</h3>
+                    <h3 class="item-name" data-catalog-key="catalog.breakfast.name.004">El Fassi</h3>
                     <span class="item-price">55 dh</span>
                 </div>
-                <p class="item-desc">Pain Batbout, Huile d'olive, olive noire • Fromage blanc, Oeufs Khlii</p>
+                <p class="item-desc" data-catalog-key="catalog.breakfast.description.004">Pain Batbout, Huile d'olive, olive noire • Fromage blanc, Oeufs Khlii</p>
             </div>
         </div>
         <!-- Healthy -->
@@ -101,10 +99,10 @@
             <div class="placeholder-img">🥗</div>
             <div class="item-info">
                 <div class="item-header">
-                    <h3 class="item-name">Healthy</h3>
+                    <h3 class="item-name" data-catalog-key="catalog.breakfast.name.005">Healthy</h3>
                     <span class="item-price">69 dh</span>
                 </div>
-                <p class="item-desc">Mini bol énergie (yaourt grec au granula) • Tartine équilibrée (toast, guacamole, œuf au plat) • Toast plaisir sucrée (beurre de cacahuète, miel, banane) • Detox (orange, carotte, gingembre)</p>
+                <p class="item-desc" data-catalog-key="catalog.breakfast.description.005">Mini bol énergie (yaourt grec au granula) • Tartine équilibrée (toast, guacamole, œuf au plat) • Toast plaisir sucrée (beurre de cacahuète, miel, banane) • Detox (orange, carotte, gingembre)</p>
             </div>
         </div>
         <!-- Sweet Kids -->
@@ -112,26 +110,26 @@
             <div class="placeholder-img">🧒</div>
             <div class="item-info">
                 <div class="item-header">
-                    <h3 class="item-name">Sweet Kids</h3>
+                    <h3 class="item-name" data-catalog-key="catalog.breakfast.name.006">Sweet Kids</h3>
                     <span class="item-price">39 dh</span>
                 </div>
-                <p class="item-desc">Miney au chocolat, Mickey au fromage • Choco pope's • Banane découpé</p>
+                <p class="item-desc" data-catalog-key="catalog.breakfast.description.006">Miney au chocolat, Mickey au fromage • Choco pope's • Banane découpé</p>
             </div>
         </div>
     </section>
     <!-- قسم الفطور Brunches -->
-    <section class="menu-category">
-        <h2 class="category-title">Brunches</h2>
+    <section class="menu-category" data-category-id="brunch">
+        <h2 class="category-title" data-translate="brunchTitle">Brunches</h2>
         <p class="section-subtitle">Toutes nos brunchs sont servie avec une boisson chaud classique au choix, jus de fruit. jusqu'à 16h</p>
         <!-- Brunch 1 -->
         <div class="menu-item">
             <div class="placeholder-img">🥐</div>
             <div class="item-info">
                 <div class="item-header">
-                    <h3 class="item-name">Brunch 1</h3>
+                    <h3 class="item-name" data-catalog-key="catalog.brunch.name.001">Brunch 1</h3>
                     <span class="item-price">120dh</span>
                 </div>
-                <p class="item-desc">Croissant le florentin (œuf brouillé, épinard) • Pain perdu caramel beurre salé • Yaourt au fruit • 3 Mini gâteaux • Potatoes</p>
+                <p class="item-desc" data-catalog-key="catalog.brunch.description.001">Croissant le florentin (œuf brouillé, épinard) • Pain perdu caramel beurre salé • Yaourt au fruit • 3 Mini gâteaux • Potatoes</p>
             </div>
         </div>
         <!-- Brunch 2 -->
@@ -139,10 +137,10 @@
             <div class="placeholder-img">🥞</div>
             <div class="item-info">
                 <div class="item-header">
-                    <h3 class="item-name">Brunch 2</h3>
+                    <h3 class="item-name" data-catalog-key="catalog.brunch.name.002">Brunch 2</h3>
                     <span class="item-price">139dh</span>
                 </div>
-                <p class="item-desc">Trois mini viennoiseries • Gaufre au choix / toast gourmand • Toast plaisir sucrée (Beurre de cacahuète, Banane, chocolat) • Smoothie bowl • Macaron • Potatoes</p>
+                <p class="item-desc" data-catalog-key="catalog.brunch.description.002">Trois mini viennoiseries • Gaufre au choix / toast gourmand • Toast plaisir sucrée (Beurre de cacahuète, Banane, chocolat) • Smoothie bowl • Macaron • Potatoes</p>
             </div>
         </div>
         <!-- Brunch 3 -->
@@ -150,21 +148,21 @@
             <div class="placeholder-img">🍳</div>
             <div class="item-info">
                 <div class="item-header">
-                    <h3 class="item-name">Brunch 3</h3>
+                    <h3 class="item-name" data-catalog-key="catalog.brunch.name.003">Brunch 3</h3>
                     <span class="item-price">115dh</span>
                 </div>
-                <p class="item-desc">Œuf Benedict • Croissant trio chocolat • Salade de fruits de saison • Choux • Potatoes</p>
+                <p class="item-desc" data-catalog-key="catalog.brunch.description.003">Œuf Benedict • Croissant trio chocolat • Salade de fruits de saison • Choux • Potatoes</p>
             </div>
         </div>
     </section>
     <!-- قسم البيض والوجبات À la Carte -->
-    <section class="menu-category">
-        <h2 class="category-title">Oeufs / Omelettes</h2>
+    <section class="menu-category" data-category-id="eggs">
+        <h2 class="category-title" data-translate="eggsTitle">Oeufs / Omelettes</h2>
         <div class="menu-item">
             <div class="placeholder-img">🍳</div>
             <div class="item-info">
                 <div class="item-header">
-                    <h3 class="item-name">Œufs au plat / brouillé / omelette nature</h3>
+                    <h3 class="item-name" data-catalog-key="catalog.eggs.name.001">Œufs au plat / brouillé / omelette nature</h3>
                     <span class="item-price">30 dh</span>
                 </div>
             </div>
@@ -173,7 +171,7 @@
             <div class="placeholder-img">🧀</div>
             <div class="item-info">
                 <div class="item-header">
-                    <h3 class="item-name">Omelette trois fromage</h3>
+                    <h3 class="item-name" data-catalog-key="catalog.eggs.name.002">Omelette trois fromage</h3>
                     <span class="item-price">38 dh</span>
                 </div>
             </div>
@@ -183,7 +181,7 @@
             <div class="placeholder-img">🥓</div>
             <div class="item-info">
                 <div class="item-header">
-                    <h3 class="item-name">Omelette charcuterie</h3>
+                    <h3 class="item-name" data-catalog-key="catalog.eggs.name.003">Omelette charcuterie</h3>
                     <span class="item-price">40 dh</span>
                 </div>
             </div>
@@ -192,7 +190,7 @@
             <div class="placeholder-img">🍅</div>
             <div class="item-info">
                 <div class="item-header">
-                    <h3 class="item-name">Omelette basquaise</h3>
+                    <h3 class="item-name" data-catalog-key="catalog.eggs.name.004">Omelette basquaise</h3>
                     <span class="item-price">38 dh</span>
                 </div>
             </div>
@@ -201,7 +199,7 @@
             <div class="placeholder-img">🍄</div>
             <div class="item-info">
                 <div class="item-header">
-                    <h3 class="item-name">Omelette champignons</h3>
+                    <h3 class="item-name" data-catalog-key="catalog.eggs.name.005">Omelette champignons</h3>
                     <span class="item-price">45 dh</span>
                 </div>
             </div>
@@ -210,7 +208,7 @@
             <div class="placeholder-img">🌿</div>
             <div class="item-info">
                 <div class="item-header">
-                    <h3 class="item-name">Omelette épinard</h3>
+                    <h3 class="item-name" data-catalog-key="catalog.eggs.name.006">Omelette épinard</h3>
                     <span class="item-price">35 dh</span>
                 </div>
             </div>
@@ -219,7 +217,7 @@
             <div class="placeholder-img">🥚</div>
             <div class="item-info">
                 <div class="item-header">
-                    <h3 class="item-name">Œuf Benedict</h3>
+                    <h3 class="item-name" data-catalog-key="catalog.eggs.name.007">Œuf Benedict</h3>
                     <span class="item-price">59 dh</span>
                 </div>
             </div>
@@ -228,24 +226,24 @@
             <div class="placeholder-img">🍳</div>
             <div class="item-info">
                 <div class="item-header">
-                    <h3 class="item-name">Œuf au Khlii</h3>
+                    <h3 class="item-name" data-catalog-key="catalog.eggs.name.008">Œuf au Khlii</h3>
                     <span class="item-price">45 dh</span>
                 </div>
             </div>
         </div>
     </section>
 <!-- قسم Gaufre / Toast - Salée -->
-    <section class="menu-category">
+    <section class="menu-category" data-category-id="savoryWaffleToast">
         <p class="section-subtitle menu-script-kicker" data-translate="gaufreSaleeKicker">Le Réveil de la Magie</p>
-        <h2 class="category-title">Gaufre / Toast - Salée</h2>
+        <h2 class="category-title" data-translate="gaufreSaleeTitle">Gaufre / Toast - Salée</h2>
         <div class="menu-item">
             <div class="placeholder-img">🍞</div>
             <div class="item-info">
                 <div class="item-header">
-                    <h3 class="item-name">Classique</h3>
+                    <h3 class="item-name" data-catalog-key="catalog.savoryWaffleToast.name.001">Classique</h3>
                     <span class="item-price">35dh</span>
                 </div>
-                <p class="item-desc">Fromage blanc, avocat, œuf, herbes</p>
+                <p class="item-desc" data-catalog-key="catalog.savoryWaffleToast.description.001">Fromage blanc, avocat, œuf, herbes</p>
             </div>
         </div>
 
@@ -253,10 +251,10 @@
             <div class="placeholder-img">🥪</div>
             <div class="item-info">
                 <div class="item-header">
-                    <h3 class="item-name">Classique Fumé</h3>
+                    <h3 class="item-name" data-catalog-key="catalog.savoryWaffleToast.name.002">Classique Fumé</h3>
                     <span class="item-price">39dh</span>
                 </div>
-                <p class="item-desc">Fromage blanc, jambon fumé, œuf, herbes</p>
+                <p class="item-desc" data-catalog-key="catalog.savoryWaffleToast.description.002">Fromage blanc, jambon fumé, œuf, herbes</p>
             </div>
         </div>
 
@@ -264,101 +262,101 @@
             <div class="placeholder-img">🥑</div>
             <div class="item-info">
                 <div class="item-header">
-                    <h3 class="item-name">Gourmand</h3>
+                    <h3 class="item-name" data-catalog-key="catalog.savoryWaffleToast.name.003">Gourmand</h3>
                     <span class="item-price">40dh</span>
                 </div>
-                <p class="item-desc">Fromage blanc, jambon fumé, œuf, avocat, herbes</p>
+                <p class="item-desc" data-catalog-key="catalog.savoryWaffleToast.description.003">Fromage blanc, jambon fumé, œuf, avocat, herbes</p>
             </div>
         </div>
         <div class="menu-item">
             <div class="placeholder-img">🧀</div>
             <div class="item-info">
                 <div class="item-header">
-                    <h3 class="item-name">Gourmand fromage</h3>
+                    <h3 class="item-name" data-catalog-key="catalog.savoryWaffleToast.name.004">Gourmand fromage</h3>
                     <span class="item-price">41dh</span>
                 </div>
-                <p class="item-desc">Fromage blanc, jambon fumé, œuf, avocat, fromage cheddar, herbes</p>
+                <p class="item-desc" data-catalog-key="catalog.savoryWaffleToast.description.004">Fromage blanc, jambon fumé, œuf, avocat, fromage cheddar, herbes</p>
             </div>
         </div>
         <div class="menu-item">
             <div class="placeholder-img">🥗</div>
             <div class="item-info">
                 <div class="item-header">
-                    <h3 class="item-name">Healthy</h3>
+                    <h3 class="item-name" data-catalog-key="catalog.savoryWaffleToast.name.005">Healthy</h3>
                     <span class="item-price">36dh</span>
                 </div>
-                <p class="item-desc">Fromage blanc, avocat, tomate, concombre</p>
+                <p class="item-desc" data-catalog-key="catalog.savoryWaffleToast.description.005">Fromage blanc, avocat, tomate, concombre</p>
             </div>
         </div>
         <div class="menu-item">
             <div class="placeholder-img">🌿</div>
             <div class="item-info">
                 <div class="item-header">
-                    <h3 class="item-name">Sicile</h3>
+                    <h3 class="item-name" data-catalog-key="catalog.savoryWaffleToast.name.006">Sicile</h3>
                     <span class="item-price">39dh</span>
                 </div>
-                <p class="item-desc">Fromage blanc, avocat, tomate, pesto, mozzarella, crème balsamique</p>
+                <p class="item-desc" data-catalog-key="catalog.savoryWaffleToast.description.006">Fromage blanc, avocat, tomate, pesto, mozzarella, crème balsamique</p>
             </div>
         </div>
     </section>
     <!-- قسم Croissandwiches -->
-    <section class="menu-category">
-        <h2 class="category-title">Croissandwiches</h2>
+    <section class="menu-category" data-category-id="croissandwiches">
+        <h2 class="category-title" data-translate="croisandwichesTitle">Croissandwiches</h2>
         <div class="menu-item">
             <div class="placeholder-img">🥐</div>
             <div class="item-info">
                 <div class="item-header">
-                    <h3 class="item-name">Le Florentin</h3>
+                    <h3 class="item-name" data-catalog-key="catalog.croissandwiches.name.001">Le Florentin</h3>
                     <span class="item-price">40dh</span>
                 </div>
-                <p class="item-desc">Oeuf brouillé, épinard</p>
+                <p class="item-desc" data-catalog-key="catalog.croissandwiches.description.001">Oeuf brouillé, épinard</p>
             </div>
         </div>
         <div class="menu-item">
             <div class="placeholder-img">🥪</div>
             <div class="item-info">
                 <div class="item-header">
-                    <h3 class="item-name">Le Complet</h3>
+                    <h3 class="item-name" data-catalog-key="catalog.croissandwiches.name.002">Le Complet</h3>
                     <span class="item-price">48dh</span>
                 </div>
-                <p class="item-desc">Jambon fumé, œuf dur, avocat, fromage cheddar</p>
+                <p class="item-desc" data-catalog-key="catalog.croissandwiches.description.002">Jambon fumé, œuf dur, avocat, fromage cheddar</p>
             </div>
         </div>
         <div class="menu-item">
             <div class="placeholder-img">🌱</div>
             <div class="item-info">
                 <div class="item-header">
-                    <h3 class="item-name">Le Verde</h3>
+                    <h3 class="item-name" data-catalog-key="catalog.croissandwiches.name.003">Le Verde</h3>
                     <span class="item-price">45dh</span>
                 </div>
-                <p class="item-desc">Avocat, pesto, tomate, fromage blanc, mozzarella, crème balsamique</p>
+                <p class="item-desc" data-catalog-key="catalog.croissandwiches.description.003">Avocat, pesto, tomate, fromage blanc, mozzarella, crème balsamique</p>
             </div>
         </div>
         <div class="menu-item">
             <div class="placeholder-img">🥑</div>
             <div class="item-info">
                 <div class="item-header">
-                    <h3 class="item-name">Le Fraîcheur</h3>
+                    <h3 class="item-name" data-catalog-key="catalog.croissandwiches.name.004">Le Fraîcheur</h3>
                     <span class="item-price">46dh</span>
                 </div>
-                <p class="item-desc">Oeuf dur, avocat, fromage blanc</p>
+                <p class="item-desc" data-catalog-key="catalog.croissandwiches.description.004">Oeuf dur, avocat, fromage blanc</p>
             </div>
         </div>
         <div class="menu-item">
             <div class="placeholder-img">🍫</div>
             <div class="item-info">
                 <div class="item-header">
-                    <h3 class="item-name">Le Trio chocolats</h3>
+                    <h3 class="item-name" data-catalog-key="catalog.croissandwiches.name.005">Le Trio chocolats</h3>
                     <span class="item-price">35dh</span>
                 </div>
-                <p class="item-desc">Noir, blanc, au lait</p>
+                <p class="item-desc" data-catalog-key="catalog.croissandwiches.description.005">Noir, blanc, au lait</p>
             </div>
         </div>
         <div class="menu-item">
             <div class="placeholder-img">🥐</div>
             <div class="item-info">
                 <div class="item-header">
-                    <h3 class="item-name">Flat Croissant aux amandes</h3>
+                    <h3 class="item-name" data-catalog-key="catalog.croissandwiches.name.006">Flat Croissant aux amandes</h3>
                     <span class="item-price">28dh</span>
                 </div>
             </div>
@@ -367,30 +365,30 @@
             <div class="placeholder-img">🍓</div>
             <div class="item-info">
                 <div class="item-header">
-                    <h3 class="item-name">Croissant fruits rouge aux chocolat fondu</h3>
+                    <h3 class="item-name" data-catalog-key="catalog.croissandwiches.name.007">Croissant fruits rouge aux chocolat fondu</h3>
                     <span class="item-price">38dh</span>
                 </div>
             </div>
         </div>
     </section>
 <!-- قسم الحلويات الفاخرة Patisserie -->
-    <section class="menu-category">
-        <h2 class="category-title">Patisserie</h2>
+    <section class="menu-category" data-category-id="patisserie">
+        <h2 class="category-title" data-translate="patisserieTitle">Patisserie</h2>
         <div class="menu-item">
             <div class="placeholder-img">👜</div>
             <div class="item-info">
                 <div class="item-header">
-                    <h3 class="item-name">Sac D'alysse</h3>
+                    <h3 class="item-name" data-catalog-key="catalog.patisserie.name.001">Sac D'alysse</h3>
                     <span class="item-price">45 dh</span>
                 </div>
-                <p class="item-desc">Orange, Framboise, chocolat, pistache</p>
+                <p class="item-desc" data-catalog-key="catalog.patisserie.description.001">Orange, Framboise, chocolat, pistache</p>
             </div>
         </div>
         <div class="menu-item">
             <div class="placeholder-img">✨</div>
             <div class="item-info">
                 <div class="item-header">
-                    <h3 class="item-name">Trompe-l'œil Kaâb Ghezal</h3>
+                    <h3 class="item-name" data-catalog-key="catalog.patisserie.name.002">Trompe-l'œil Kaâb Ghezal</h3>
                     <span class="item-price">35 dh</span>
                 </div>
             </div>
@@ -399,7 +397,7 @@
             <div class="placeholder-img">🍫</div>
             <div class="item-info">
                 <div class="item-header">
-                    <h3 class="item-name">Trois chocolats</h3>
+                    <h3 class="item-name" data-catalog-key="catalog.patisserie.name.003">Trois chocolats</h3>
                     <span class="item-price">32 dh</span>
                 </div>
             </div>
@@ -408,7 +406,7 @@
             <div class="placeholder-img">🍰</div>
             <div class="item-info">
                 <div class="item-header">
-                    <h3 class="item-name">Alonga</h3>
+                    <h3 class="item-name" data-catalog-key="catalog.patisserie.name.004">Alonga</h3>
                     <span class="item-price">32 dh</span>
                 </div>
             </div>
@@ -417,7 +415,7 @@
             <div class="placeholder-img">🍒</div>
             <div class="item-info">
                 <div class="item-header">
-                    <h3 class="item-name">Forêt noir</h3>
+                    <h3 class="item-name" data-catalog-key="catalog.patisserie.name.005">Forêt noir</h3>
                     <span class="item-price">30 dh</span>
                 </div>
             </div>
@@ -426,7 +424,7 @@
             <div class="placeholder-img">🥭</div>
             <div class="item-info">
                 <div class="item-header">
-                    <h3 class="item-name">Tiramisu mangue</h3>
+                    <h3 class="item-name" data-catalog-key="catalog.patisserie.name.006">Tiramisu mangue</h3>
                     <span class="item-price">32 dh</span>
                 </div>
             </div>
@@ -435,7 +433,7 @@
             <div class="placeholder-img">🥜</div>
             <div class="item-info">
                 <div class="item-header">
-                    <h3 class="item-name">Snickers</h3>
+                    <h3 class="item-name" data-catalog-key="catalog.patisserie.name.007">Snickers</h3>
                     <span class="item-price">32 dh</span>
                 </div>
             </div>
@@ -444,7 +442,7 @@
             <div class="placeholder-img">❤️</div>
             <div class="item-info">
                 <div class="item-header">
-                    <h3 class="item-name">Red Velvet</h3>
+                    <h3 class="item-name" data-catalog-key="catalog.patisserie.name.008">Red Velvet</h3>
                     <span class="item-price">35 dh</span>
                 </div>
             </div>
@@ -453,20 +451,20 @@
             <div class="placeholder-img">🧁</div>
             <div class="item-info">
                 <div class="item-header">
-                    <h3 class="item-name">Saint michel</h3>
+                    <h3 class="item-name" data-catalog-key="catalog.patisserie.name.009">Saint michel</h3>
                     <span class="item-price">30 dh</span>
                 </div>
             </div>
         </div>
     </section>
     <!-- قسم التارت Les tartes -->
-    <section class="menu-category">
-        <h2 class="category-title">Les tartes</h2>
+    <section class="menu-category" data-category-id="tarts">
+        <h2 class="category-title" data-translate="tartesTitle">Les tartes</h2>
         <div class="menu-item">
             <div class="placeholder-img">🥧</div>
             <div class="item-info">
                 <div class="item-header">
-                    <h3 class="item-name">Tarte framboises</h3>
+                    <h3 class="item-name" data-catalog-key="catalog.tarts.name.001">Tarte framboises</h3>
                     <span class="item-price">29 dh</span>
                 </div>
             </div>
@@ -475,7 +473,7 @@
             <div class="placeholder-img">🍋</div>
             <div class="item-info">
                 <div class="item-header">
-                    <h3 class="item-name">Tarte citron meringuée</h3>
+                    <h3 class="item-name" data-catalog-key="catalog.tarts.name.002">Tarte citron meringuée</h3>
                     <span class="item-price">29 dh</span>
                 </div>
             </div>
@@ -484,34 +482,34 @@
             <div class="placeholder-img">🍫</div>
             <div class="item-info">
                 <div class="item-header">
-                    <h3 class="item-name">Tarte au chocolat</h3>
+                    <h3 class="item-name" data-catalog-key="catalog.tarts.name.003">Tarte au chocolat</h3>
                     <span class="item-price">29 dh</span>
                 </div>
             </div>
         </div>
     </section>
     <!-- قسم الماكرون Macarons -->
-    <section class="menu-category">
-        <h2 class="category-title">Macarons</h2>
+    <section class="menu-category" data-category-id="macarons">
+        <h2 class="category-title" data-translate="macaronsTitle">Macarons</h2>
         <p class="section-subtitle">Découvrez notre sélection de macarons - 8dh / Pièce</p>
         <div class="menu-item">
             <div class="placeholder-img">🌸</div>
             <div class="item-info">
                 <div class="item-header">
-                    <h3 class="item-name">Parfums disponibles</h3>
+                    <h3 class="item-name" data-catalog-key="catalog.macarons.name.001">Parfums disponibles</h3>
                 </div>
-                <p class="item-desc">Chocolat • Vanille • Citron • Fruit Rouge • Pistache • Mangue • Café</p>
+                <p class="item-desc" data-catalog-key="catalog.macarons.description.001">Chocolat • Vanille • Citron • Fruit Rouge • Pistache • Mangue • Café</p>
             </div>
         </div>
     </section>
 <!-- قسم المشروبات الساخنة الكلاسيكية Boissons Chaudes Classic -->
-    <section class="menu-category">
-        <h2 class="category-title">Boissons Chaudes Classic</h2>
+    <section class="menu-category" data-category-id="classicHotDrinks">
+        <h2 class="category-title" data-translate="hotDrinksClassicTitle">Boissons Chaudes Classic</h2>
         <div class="menu-item">
             <div class="placeholder-img">☕</div>
             <div class="item-info">
                 <div class="item-header">
-                    <h3 class="item-name">Espresso</h3>
+                    <h3 class="item-name" data-catalog-key="catalog.classicHotDrinks.name.001">Espresso</h3>
                     <span class="item-price">27 dh</span>
                 </div>
             </div>
@@ -520,7 +518,7 @@
             <div class="placeholder-img">☕</div>
             <div class="item-info">
                 <div class="item-header">
-                    <h3 class="item-name">Double Espresso</h3>
+                    <h3 class="item-name" data-catalog-key="catalog.classicHotDrinks.name.002">Double Espresso</h3>
                     <span class="item-price">32 dh</span>
                 </div>
             </div>
@@ -529,7 +527,7 @@
             <div class="placeholder-img">☕</div>
             <div class="item-info">
                 <div class="item-header">
-                    <h3 class="item-name">Allongé</h3>
+                    <h3 class="item-name" data-catalog-key="catalog.classicHotDrinks.name.003">Allongé</h3>
                     <span class="item-price">28 dh</span>
                 </div>
             </div>
@@ -538,7 +536,7 @@
             <div class="placeholder-img">☕</div>
             <div class="item-info">
                 <div class="item-header">
-                    <h3 class="item-name">Nespresso illy</h3>
+                    <h3 class="item-name" data-catalog-key="catalog.classicHotDrinks.name.004">Nespresso illy</h3>
                     <span class="item-price">30 dh</span>
                 </div>
             </div>
@@ -547,7 +545,7 @@
             <div class="placeholder-img">☕</div>
             <div class="item-info">
                 <div class="item-header">
-                    <h3 class="item-name">Café Crème</h3>
+                    <h3 class="item-name" data-catalog-key="catalog.classicHotDrinks.name.005">Café Crème</h3>
                     <span class="item-price">29 dh</span>
                 </div>
             </div>
@@ -556,7 +554,7 @@
             <div class="placeholder-img">☕</div>
             <div class="item-info">
                 <div class="item-header">
-                    <h3 class="item-name">Cappuccino</h3>
+                    <h3 class="item-name" data-catalog-key="catalog.classicHotDrinks.name.006">Cappuccino</h3>
                     <span class="item-price">30 dh</span>
                 </div>
             </div>
@@ -565,7 +563,7 @@
             <div class="placeholder-img">🍫</div>
             <div class="item-info">
                 <div class="item-header">
-                    <h3 class="item-name">Chocolat Chaud</h3>
+                    <h3 class="item-name" data-catalog-key="catalog.classicHotDrinks.name.007">Chocolat Chaud</h3>
                     <span class="item-price">30 dh</span>
                 </div>
             </div>
@@ -574,7 +572,7 @@
             <div class="placeholder-img">🍃</div>
             <div class="item-info">
                 <div class="item-header">
-                    <h3 class="item-name">Thé à la Menthe</h3>
+                    <h3 class="item-name" data-catalog-key="catalog.classicHotDrinks.name.008">Thé à la Menthe</h3>
                     <span class="item-price">22 dh</span>
                 </div>
             </div>
@@ -583,7 +581,7 @@
             <div class="placeholder-img">🥛</div>
             <div class="item-info">
                 <div class="item-header">
-                    <h3 class="item-name">Lait chaud</h3>
+                    <h3 class="item-name" data-catalog-key="catalog.classicHotDrinks.name.009">Lait chaud</h3>
                     <span class="item-price">25 dh</span>
                 </div>
             </div>
@@ -592,7 +590,7 @@
             <div class="placeholder-img">🌿</div>
             <div class="item-info">
                 <div class="item-header">
-                    <h3 class="item-name">Verveine</h3>
+                    <h3 class="item-name" data-catalog-key="catalog.classicHotDrinks.name.010">Verveine</h3>
                     <span class="item-price">22 dh</span>
                 </div>
             </div>
@@ -601,20 +599,20 @@
             <div class="placeholder-img">🫖</div>
             <div class="item-info">
                 <div class="item-header">
-                    <h3 class="item-name">Thé Noir</h3>
+                    <h3 class="item-name" data-catalog-key="catalog.classicHotDrinks.name.011">Thé Noir</h3>
                     <span class="item-price">22 dh</span>
                 </div>
             </div>
         </div>
     </section>
     <!-- قسم المشروبات الساخنة الخاصة Boissons Chaudes Spéciales -->
-    <section class="menu-category">
-        <h2 class="category-title">Boissons Chaudes Spéciales</h2>
+    <section class="menu-category" data-category-id="specialHotDrinks">
+        <h2 class="category-title" data-translate="hotDrinksSpecialTitle">Boissons Chaudes Spéciales</h2>
         <div class="menu-item">
             <div class="placeholder-img">🍫</div>
             <div class="item-info">
                 <div class="item-header">
-                    <h3 class="item-name">Chocolat à l'ancienne</h3>
+                    <h3 class="item-name" data-catalog-key="catalog.specialHotDrinks.name.001">Chocolat à l'ancienne</h3>
                     <span class="item-price">35 dh</span>
                 </div>
             </div>
@@ -623,7 +621,7 @@
             <div class="placeholder-img">🍫</div>
             <div class="item-info">
                 <div class="item-header">
-                    <h3 class="item-name">Chocolat à l'ancienne Viennois</h3>
+                    <h3 class="item-name" data-catalog-key="catalog.specialHotDrinks.name.002">Chocolat à l'ancienne Viennois</h3>
                     <span class="item-price">39 dh</span>
                 </div>
             </div>
@@ -632,27 +630,27 @@
             <div class="placeholder-img">☕</div>
             <div class="item-info">
                 <div class="item-header">
-                    <h3 class="item-name">Cappuccino</h3>
+                    <h3 class="item-name" data-catalog-key="catalog.specialHotDrinks.name.003">Cappuccino</h3>
                     <span class="item-price">32 dh</span>
                 </div>
-                <p class="item-desc">Vanille, Noisette, Caramel, lotus</p>
+                <p class="item-desc" data-catalog-key="catalog.specialHotDrinks.description.001">Vanille, Noisette, Caramel, lotus</p>
             </div>
         </div>
         <div class="menu-item">
             <div class="placeholder-img">☕</div>
             <div class="item-info">
                 <div class="item-header">
-                    <h3 class="item-name">Macchiato</h3>
+                    <h3 class="item-name" data-catalog-key="catalog.specialHotDrinks.name.004">Macchiato</h3>
                     <span class="item-price">32 dh</span>
                 </div>
-                <p class="item-desc">Vanille, Noisette, Caramel, lotus</p>
+                <p class="item-desc" data-catalog-key="catalog.specialHotDrinks.description.002">Vanille, Noisette, Caramel, lotus</p>
             </div>
         </div>
         <div class="menu-item">
             <div class="placeholder-img">🍵</div>
             <div class="item-info">
                 <div class="item-header">
-                    <h3 class="item-name">Matcha Latte</h3>
+                    <h3 class="item-name" data-catalog-key="catalog.specialHotDrinks.name.005">Matcha Latte</h3>
                     <span class="item-price">37 dh</span>
                 </div>
             </div>
@@ -661,7 +659,7 @@
             <div class="placeholder-img">🧋</div>
             <div class="item-info">
                 <div class="item-header">
-                    <h3 class="item-name">Chaï Latte</h3>
+                    <h3 class="item-name" data-catalog-key="catalog.specialHotDrinks.name.006">Chaï Latte</h3>
                     <span class="item-price">41 dh</span>
                 </div>
             </div>
@@ -670,21 +668,21 @@
             <div class="placeholder-img">✨</div>
             <div class="item-info">
                 <div class="item-header">
-                    <h3 class="item-name">Latte Signature</h3>
+                    <h3 class="item-name" data-catalog-key="catalog.specialHotDrinks.name.007">Latte Signature</h3>
                     <span class="item-price">40 dh</span>
                 </div>
-                <p class="item-desc">latte aux épices</p>
+                <p class="item-desc" data-catalog-key="catalog.specialHotDrinks.description.003">latte aux épices</p>
             </div>
         </div>
     </section>
     <!-- قسم المياه Eau -->
-    <section class="menu-category">
-        <h2 class="category-title">Eau</h2>
+    <section class="menu-category" data-category-id="water">
+        <h2 class="category-title" data-translate="waterTitle">Eau</h2>
         <div class="menu-item">
             <div class="placeholder-img">💧</div>
             <div class="item-info">
                 <div class="item-header">
-                    <h3 class="item-name">Sidi Ali 50 cl</h3>
+                    <h3 class="item-name" data-catalog-key="catalog.water.name.001">Sidi Ali 50 cl</h3>
                     <span class="item-price">13 dh</span>
                 </div>
             </div>
@@ -693,124 +691,124 @@
             <div class="placeholder-img">💧</div>
             <div class="item-info">
                 <div class="item-header">
-                    <h3 class="item-name">Ouelmes 25cl</h3>
+                    <h3 class="item-name" data-catalog-key="catalog.water.name.002">Ouelmes 25cl</h3>
                     <span class="item-price">15 dh</span>
                 </div>
             </div>
         </div>
     </section>
 <!-- قسم تشكيلة الشاي Sélections de Tchaba -->
-    <section class="menu-category">
-        <h2 class="category-title">Sélections De Tchaba</h2>
+    <section class="menu-category" data-category-id="tchaba">
+        <h2 class="category-title" data-translate="tchabaTitle">Sélections De Tchaba</h2>
         <div class="menu-item">
             <div class="placeholder-img">🫖</div>
             <div class="item-info">
                 <div class="item-header">
-                    <h3 class="item-name">Royal Breakfast</h3>
+                    <h3 class="item-name" data-catalog-key="catalog.tchaba.name.001">Royal Breakfast</h3>
                     <span class="item-price">29 dh</span>
                 </div>
-                <p class="item-desc">Thé Noir</p>
+                <p class="item-desc" data-catalog-key="catalog.tchaba.description.001">Thé Noir</p>
             </div>
         </div>
         <div class="menu-item">
             <div class="placeholder-img">🫖</div>
             <div class="item-info">
                 <div class="item-header">
-                    <h3 class="item-name">Fruit de la Passion</h3>
+                    <h3 class="item-name" data-catalog-key="catalog.tchaba.name.002">Fruit de la Passion</h3>
                     <span class="item-price">32 dh</span>
                 </div>
-                <p class="item-desc">Thé Vert</p>
+                <p class="item-desc" data-catalog-key="catalog.tchaba.description.002">Thé Vert</p>
             </div>
         </div>
         <div class="menu-item">
             <div class="placeholder-img">🫖</div>
             <div class="item-info">
                 <div class="item-header">
-                    <h3 class="item-name">Samarkand</h3>
+                    <h3 class="item-name" data-catalog-key="catalog.tchaba.name.003">Samarkand</h3>
                     <span class="item-price">32 dh</span>
                 </div>
-                <p class="item-desc">Infusion</p>
+                <p class="item-desc" data-catalog-key="catalog.tchaba.description.003">Infusion</p>
             </div>
         </div>
         <div class="menu-item">
             <div class="placeholder-img">🫖</div>
             <div class="item-info">
                 <div class="item-header">
-                    <h3 class="item-name">Happy Forest</h3>
+                    <h3 class="item-name" data-catalog-key="catalog.tchaba.name.004">Happy Forest</h3>
                     <span class="item-price">32 dh</span>
                 </div>
-                <p class="item-desc">Infusion</p>
+                <p class="item-desc" data-catalog-key="catalog.tchaba.description.004">Infusion</p>
             </div>
         </div>
         <div class="menu-item">
             <div class="placeholder-img">🫖</div>
             <div class="item-info">
                 <div class="item-header">
-                    <h3 class="item-name">Milky Oolong</h3>
+                    <h3 class="item-name" data-catalog-key="catalog.tchaba.name.005">Milky Oolong</h3>
                     <span class="item-price">29 dh</span>
                 </div>
-                <p class="item-desc">Thé Bleu</p>
+                <p class="item-desc" data-catalog-key="catalog.tchaba.description.005">Thé Bleu</p>
             </div>
         </div>
         <div class="menu-item">
             <div class="placeholder-img">🫖</div>
             <div class="item-info">
                 <div class="item-header">
-                    <h3 class="item-name">Sabah Dubai</h3>
+                    <h3 class="item-name" data-catalog-key="catalog.tchaba.name.006">Sabah Dubai</h3>
                     <span class="item-price">38 dh</span>
                 </div>
-                <p class="item-desc">Thé Blanc</p>
+                <p class="item-desc" data-catalog-key="catalog.tchaba.description.006">Thé Blanc</p>
             </div>
         </div>
         <div class="menu-item">
             <div class="placeholder-img">🫖</div>
             <div class="item-info">
                 <div class="item-header">
-                    <h3 class="item-name">Mysterious Medina</h3>
+                    <h3 class="item-name" data-catalog-key="catalog.tchaba.name.007">Mysterious Medina</h3>
                     <span class="item-price">29 dh</span>
                 </div>
-                <p class="item-desc">Thé Oolong</p>
+                <p class="item-desc" data-catalog-key="catalog.tchaba.description.007">Thé Oolong</p>
             </div>
         </div>
         <div class="menu-item">
             <div class="placeholder-img">🫖</div>
             <div class="item-info">
                 <div class="item-header">
-                    <h3 class="item-name">Masala Chaï</h3>
+                    <h3 class="item-name" data-catalog-key="catalog.tchaba.name.008">Masala Chaï</h3>
                     <span class="item-price">29 dh</span>
                 </div>
-                <p class="item-desc">Thé Noir</p>
+                <p class="item-desc" data-catalog-key="catalog.tchaba.description.008">Thé Noir</p>
             </div>
         </div>
         <div class="menu-item">
             <div class="placeholder-img">🫖</div>
             <div class="item-info">
                 <div class="item-header">
-                    <h3 class="item-name">Free Mind</h3>
+                    <h3 class="item-name" data-catalog-key="catalog.tchaba.name.009">Free Mind</h3>
                     <span class="item-price">29 dh</span>
                 </div>
-                <p class="item-desc">Infusion</p>
+                <p class="item-desc" data-catalog-key="catalog.tchaba.description.009">Infusion</p>
             </div>
         </div>
         <div class="menu-item">
             <div class="placeholder-img">🫖</div>
             <div class="item-info">
                 <div class="item-header">
-                    <h3 class="item-name">The Signature Red Fusion</h3>
+                    <h3 class="item-name" data-catalog-key="catalog.tchaba.name.010">The Signature Red Fusion</h3>
                     <span class="item-price">42 dh</span>
                 </div>
-                <p class="item-desc">Infusion (fleur de pomme)</p>
+                <p class="item-desc" data-catalog-key="catalog.tchaba.description.010">Infusion (fleur de pomme)</p>
             </div>
         </div>
     </section>
     <!-- قسم الشاي المثلج Ice Tea -->
-    <section class="menu-category">
-        <h2 class="category-title">Ice Tea</h2>
+    <section class="menu-category" data-category-id="iceTea">
+        <h2 class="category-title" data-translate="iceTeaTitle">Ice Tea</h2>
         <div class="menu-item">
             <div class="placeholder-img">🧊</div>
             <div class="item-info">
                 <div class="item-header">
-                    <h3 class="item-name">Pêche</h3>
+                    <h3 class="item-name" data-catalog-key="catalog.iceTea.name.001">Pêche</h3>
                     <span class="item-price">26 dh</span>
                 </div>
             </div>
@@ -819,7 +817,7 @@
             <div class="placeholder-img">🧊</div>
             <div class="item-info">
                 <div class="item-header">
-                    <h3 class="item-name">Fruits Rouges</h3>
+                    <h3 class="item-name" data-catalog-key="catalog.iceTea.name.002">Fruits Rouges</h3>
                     <span class="item-price">26 dh</span>
                 </div>
             </div>
@@ -828,73 +826,73 @@
             <div class="placeholder-img">🧊</div>
             <div class="item-info">
                 <div class="item-header">
-                    <h3 class="item-name">Citron</h3>
+                    <h3 class="item-name" data-catalog-key="catalog.iceTea.name.003">Citron</h3>
                     <span class="item-price">26 dh</span>
                 </div>
             </div>
         </div>
     </section>
     <!-- قسم الآيس كريم Ice Cream -->
-    <section class="menu-category">
-        <h2 class="category-title">Ice Cream</h2>
+    <section class="menu-category" data-category-id="iceCream">
+        <h2 class="category-title" data-translate="iceCreamTitle">Ice Cream</h2>
         <p class="section-subtitle">Sélection de glaces à Votre choix - 18 dh / boule</p>
         <div class="menu-item">
             <div class="placeholder-img">🍨</div>
             <div class="item-info">
                 <div class="item-header">
-                    <h3 class="item-name">Parfums disponibles</h3>
+                    <h3 class="item-name" data-catalog-key="catalog.iceCream.name.001">Parfums disponibles</h3>
                 </div>
-                <p class="item-desc">Chocolat • Vanille • Fraise • Pistache • Caramel • Fruit du bois</p>
+                <p class="item-desc" data-catalog-key="catalog.iceCream.description.001">Chocolat • Vanille • Fraise • Pistache • Caramel • Fruit du bois</p>
             </div>
         </div>
     </section>
     <!-- قسم القهوة المثلجة Ice Coffee -->
-    <section class="menu-category">
-        <h2 class="category-title">Ice Coffee</h2>
+    <section class="menu-category" data-category-id="iceCoffee">
+        <h2 class="category-title" data-translate="iceCoffeeTitle">Ice Coffee</h2>
         <div class="menu-item">
             <div class="placeholder-img">🧋</div>
             <div class="item-info">
                 <div class="item-header">
-                    <h3 class="item-name">Iced Coffee</h3>
+                    <h3 class="item-name" data-catalog-key="catalog.iceCoffee.name.001">Iced Coffee</h3>
                     <span class="item-price">35 dh</span>
                 </div>
-                <p class="item-desc">Vanille, Caramel, Chocolat, Spanish</p>
+                <p class="item-desc" data-catalog-key="catalog.iceCoffee.description.001">Vanille, Caramel, Chocolat, Spanish</p>
             </div>
         </div>
         <div class="menu-item">
             <div class="placeholder-img">🧋</div>
             <div class="item-info">
                 <div class="item-header">
-                    <h3 class="item-name">Iced Matcha</h3>
+                    <h3 class="item-name" data-catalog-key="catalog.iceCoffee.name.002">Iced Matcha</h3>
                     <span class="item-price">39 dh</span>
                 </div>
-                <p class="item-desc">mangue, Orange, Fruit Rouge</p>
+                <p class="item-desc" data-catalog-key="catalog.iceCoffee.description.002">mangue, Orange, Fruit Rouge</p>
             </div>
         </div>
         <div class="menu-item">
             <div class="placeholder-img">🧋</div>
             <div class="item-info">
                 <div class="item-header">
-                    <h3 class="item-name">Iced Latte</h3>
+                    <h3 class="item-name" data-catalog-key="catalog.iceCoffee.name.003">Iced Latte</h3>
                     <span class="item-price">39 dh</span>
                 </div>
-                <p class="item-desc">Vanille, Caramel, Chocolat, Spanish</p>
+                <p class="item-desc" data-catalog-key="catalog.iceCoffee.description.003">Vanille, Caramel, Chocolat, Spanish</p>
             </div>
         </div>
         <div class="menu-item">
             <div class="placeholder-img">🧋</div>
             <div class="item-info">
                 <div class="item-header">
-                    <h3 class="item-name">Affogato</h3>
+                    <h3 class="item-name" data-catalog-key="catalog.iceCoffee.name.004">Affogato</h3>
                     <span class="item-price">40 dh</span>
                 </div>
-                <p class="item-desc">Vanille, Caramel, Chocolat, Lotus</p>
+                <p class="item-desc" data-catalog-key="catalog.iceCoffee.description.004">Vanille, Caramel, Chocolat, Lotus</p>
             </div>
         </div>
     </section>
 <!-- قسم أليس في بلاد العجائب Alysse Au Pays Des Merveilles -->
-    <section class="menu-category">
-        <h2 class="category-title">Alysse Au Pays Des Merveilles</h2>
+    <section class="menu-category" data-category-id="wonderland">
+        <h2 class="category-title" data-translate="wonderlandTitle">Alysse Au Pays Des Merveilles</h2>
         <p class="section-subtitle">Alysse Tree - Formules Pâtisserie</p>
         <!-- أسعار حوامل الحلويات -->
         <div class="menu-item" style="justify-content: center; text-align: center; border-bottom: 1px dashed #d4ddd5; padding-bottom: 20px;">
@@ -911,110 +909,110 @@
             <div class="placeholder-img">🌳</div>
             <div class="item-info">
                 <div class="item-header">
-                    <h3 class="item-name">Plaisir Marocain</h3>
+                    <h3 class="item-name" data-catalog-key="catalog.wonderland.name.001">Plaisir Marocain</h3>
                 </div>
-                <p class="item-desc">Sélection de pâtisseries marocaines. "Pâtisserie marocaine du jour"</p>
+                <p class="item-desc" data-catalog-key="catalog.wonderland.description.001">Sélection de pâtisseries marocaines. "Pâtisserie marocaine du jour"</p>
             </div>
         </div>
         <div class="menu-item">
             <div class="placeholder-img">🌸</div>
             <div class="item-info">
                 <div class="item-header">
-                    <h3 class="item-name">Plaisir Sucré</h3>
+                    <h3 class="item-name" data-catalog-key="catalog.wonderland.name.002">Plaisir Sucré</h3>
                 </div>
-                <p class="item-desc">Sélection de pâtisseries françaises : "macaron, petit gâteau, choux, tartelette"</p>
+                <p class="item-desc" data-catalog-key="catalog.wonderland.description.002">Sélection de pâtisseries françaises : "macaron, petit gâteau, choux, tartelette"</p>
             </div>
         </div>
         <div class="menu-item">
             <div class="placeholder-img">✨</div>
             <div class="item-info">
                 <div class="item-header">
-                    <h3 class="item-name">Plaisir d'Alysse</h3>
+                    <h3 class="item-name" data-catalog-key="catalog.wonderland.name.003">Plaisir d'Alysse</h3>
                 </div>
-                <p class="item-desc">Mélange de pâtisseries marocaines & françaises.</p>
+                <p class="item-desc" data-catalog-key="catalog.wonderland.description.003">Mélange de pâtisseries marocaines & françaises.</p>
             </div>
         </div>
     </section>
     <!-- قسم القهوة الذواقة Café Gourmand -->
-    <section class="menu-category">
-        <h2 class="category-title">Café Gourmand</h2>
+    <section class="menu-category" data-category-id="cafeGourmand">
+        <h2 class="category-title" data-translate="cafeGourmandTitle">Café Gourmand</h2>
         <div class="menu-item">
             <div class="placeholder-img">☕</div>
             <div class="item-info">
                 <div class="item-header">
-                    <h3 class="item-name">Douceur d'Alysse</h3>
+                    <h3 class="item-name" data-catalog-key="catalog.cafeGourmand.name.001">Douceur d'Alysse</h3>
                     <span class="item-price">55 dh</span>
                 </div>
-                <p class="item-desc">Une boisson chaud classique au choix • Une pâtisserie a choix</p>
+                <p class="item-desc" data-catalog-key="catalog.cafeGourmand.description.001">Une boisson chaud classique au choix • Une pâtisserie a choix</p>
             </div>
         </div>
         <div class="menu-item">
             <div class="placeholder-img">☕</div>
             <div class="item-info">
                 <div class="item-header">
-                    <h3 class="item-name">Plaisir d'Alysse</h3>
+                    <h3 class="item-name" data-catalog-key="catalog.cafeGourmand.name.002">Plaisir d'Alysse</h3>
                     <span class="item-price">35 dh</span>
                 </div>
-                <p class="item-desc">Une boisson chaud classique au choix • Un macaron au choix</p>
+                <p class="item-desc" data-catalog-key="catalog.cafeGourmand.description.002">Une boisson chaud classique au choix • Un macaron au choix</p>
             </div>
         </div>
     </section>
 <!-- قسم وقت الشاي Tea Time -->
-    <section class="menu-category">
-        <h2 class="category-title">Tea Time</h2>
+    <section class="menu-category" data-category-id="teaTime">
+        <h2 class="category-title" data-translate="teaTimeTitle">Tea Time</h2>
         <div class="menu-item">
             <div class="placeholder-img">🫖</div>
             <div class="item-info">
                 <div class="item-header">
-                    <h3 class="item-name">Le Marocain</h3>
+                    <h3 class="item-name" data-catalog-key="catalog.teaTime.name.001">Le Marocain</h3>
                     <span class="item-price">49 dh</span>
                 </div>
-                <p class="item-desc">thé a la menthe, hercha farcie (fromage aux herbes, miel), corne de gazelle, fekkas</p>
+                <p class="item-desc" data-catalog-key="catalog.teaTime.description.001">thé a la menthe, hercha farcie (fromage aux herbes, miel), corne de gazelle, fekkas</p>
             </div>
         </div>
         <div class="menu-item">
             <div class="placeholder-img">🫖</div>
             <div class="item-info">
                 <div class="item-header">
-                    <h3 class="item-name">Le Savoureux</h3>
+                    <h3 class="item-name" data-catalog-key="catalog.teaTime.name.002">Le Savoureux</h3>
                     <span class="item-price">49 dh</span>
                 </div>
-                <p class="item-desc">boisson chaude classique au choix, financier, Cookies, choux</p>
+                <p class="item-desc" data-catalog-key="catalog.teaTime.description.002">boisson chaude classique au choix, financier, Cookies, choux</p>
             </div>
         </div>
         <div class="menu-item">
             <div class="placeholder-img">🫖</div>
             <div class="item-info">
                 <div class="item-header">
-                    <h3 class="item-name">L'Original</h3>
+                    <h3 class="item-name" data-catalog-key="catalog.teaTime.name.003">L'Original</h3>
                     <span class="item-price">55 dh</span>
                 </div>
-                <p class="item-desc">boisson chaud classique au choix, flat croissant aux amandes, macaron</p>
+                <p class="item-desc" data-catalog-key="catalog.teaTime.description.003">boisson chaud classique au choix, flat croissant aux amandes, macaron</p>
             </div>
         </div>
     </section>
     <!-- قسم شوكو تايم Choco Time -->
-    <section class="menu-category">
-        <h2 class="category-title">Choco Time</h2>
+    <section class="menu-category" data-category-id="chocoTime">
+        <h2 class="category-title" data-translate="chocoTimeTitle">Choco Time</h2>
         <div class="menu-item">
             <div class="placeholder-img">🍫</div>
             <div class="item-info">
                 <div class="item-header">
-                    <h3 class="item-name">Chocolat Signature</h3>
+                    <h3 class="item-name" data-catalog-key="catalog.chocoTime.name.001">Chocolat Signature</h3>
                     <span class="item-price">55 dh</span>
                 </div>
-                <p class="item-desc">Chantilly, 3 éclairs ou 3 cookies</p>
+                <p class="item-desc" data-catalog-key="catalog.chocoTime.description.001">Chantilly, 3 éclairs ou 3 cookies</p>
             </div>
         </div>
     </section>
     <!-- قسم طاولة أليس La table d'Alysse -->
-    <section class="menu-category">
-        <h2 class="category-title">La table d'Alysse</h2>
+    <section class="menu-category" data-category-id="tableAlysse">
+        <h2 class="category-title" data-translate="tableAlysseTitle">La table d'Alysse</h2>
         <p class="section-subtitle">Composition</p>
         <div class="menu-item">
             <div class="placeholder-img">✨</div>
             <div class="item-info">
-                <p class="item-desc" style="line-height: 1.8; color: #2c3e35;">
+                <p class="item-desc" style="line-height: 1.8; color: #2c3e35;" data-catalog-key="catalog.tableAlysse.description.001">
                     • Boisson chaud aux choix<br>
                     • Croque maison<br>
                     • 2 mignardise<br>
@@ -1035,101 +1033,101 @@
         </div>
     </section>
 <!-- قسم الاستراحة السكرية Pause Sucrée -->
-    <section class="menu-category">
-        <h2 class="category-title">Pause Sucrée</h2>
+    <section class="menu-category" data-category-id="sweetBreak">
+        <h2 class="category-title" data-translate="pauseSucreeTitle">Pause Sucrée</h2>
         <div class="menu-item">
             <div class="placeholder-img">🍫</div>
             <div class="item-info">
                 <div class="item-header">
-                    <h3 class="item-name">Coque Chocolat</h3>
+                    <h3 class="item-name" data-catalog-key="catalog.sweetBreak.name.001">Coque Chocolat</h3>
                     <span class="item-price">65 dh</span>
                 </div>
-                <p class="item-desc">tiramisu, chocolat fondu</p>
+                <p class="item-desc" data-catalog-key="catalog.sweetBreak.description.001">tiramisu, chocolat fondu</p>
             </div>
         </div>
         <div class="menu-item">
             <div class="placeholder-img">✨</div>
             <div class="item-info">
                 <div class="item-header">
-                    <h3 class="item-name">Bowl d'Alysse</h3>
+                    <h3 class="item-name" data-catalog-key="catalog.sweetBreak.name.002">Bowl d'Alysse</h3>
                     <span class="item-price">65 dh</span>
                 </div>
-                <p class="item-desc">6 mini trompe-l'œil</p>
+                <p class="item-desc" data-catalog-key="catalog.sweetBreak.description.002">6 mini trompe-l'œil</p>
             </div>
         </div>
         <div class="menu-item">
             <div class="placeholder-img">🍰</div>
             <div class="item-info">
                 <div class="item-header">
-                    <h3 class="item-name">London Cake</h3>
+                    <h3 class="item-name" data-catalog-key="catalog.sweetBreak.name.003">London Cake</h3>
                     <span class="item-price">45 dh</span>
                 </div>
-                <p class="item-desc">servis avec chocolat noire</p>
+                <p class="item-desc" data-catalog-key="catalog.sweetBreak.description.003">servis avec chocolat noire</p>
             </div>
         </div>
         <div class="menu-item">
             <div class="placeholder-img">🧁</div>
             <div class="item-info">
                 <div class="item-header">
-                    <h3 class="item-name">Choux & Chocolat</h3>
+                    <h3 class="item-name" data-catalog-key="catalog.sweetBreak.name.004">Choux & Chocolat</h3>
                     <span class="item-price">45 dh</span>
                 </div>
-                <p class="item-desc">trois choux, boule de glace, chocolat fondu</p>
+                <p class="item-desc" data-catalog-key="catalog.sweetBreak.description.004">trois choux, boule de glace, chocolat fondu</p>
             </div>
         </div>
     </section>
     <!-- قسم البان بيردو Pain Perdu -->
-    <section class="menu-category">
-        <h2 class="category-title">Pain Perdu</h2>
+    <section class="menu-category" data-category-id="painPerdu">
+        <h2 class="category-title" data-translate="painPerduTitle">Pain Perdu</h2>
         <div class="menu-item">
             <div class="placeholder-img">🍞</div>
             <div class="item-info">
                 <div class="item-header">
-                    <h3 class="item-name">Alysse</h3>
+                    <h3 class="item-name" data-catalog-key="catalog.painPerdu.name.001">Alysse</h3>
                     <span class="item-price">55 dh</span>
                 </div>
-                <p class="item-desc">sirop d'érable, glace vanille, macaron</p>
+                <p class="item-desc" data-catalog-key="catalog.painPerdu.description.001">sirop d'érable, glace vanille, macaron</p>
             </div>
         </div>
         <div class="menu-item">
             <div class="placeholder-img">🍯</div>
             <div class="item-info">
                 <div class="item-header">
-                    <h3 class="item-name">Le pain du chapelier</h3>
+                    <h3 class="item-name" data-catalog-key="catalog.painPerdu.name.002">Le pain du chapelier</h3>
                     <span class="item-price">50 dh</span>
                 </div>
-                <p class="item-desc">pomme, cannelle, caramel</p>
+                <p class="item-desc" data-catalog-key="catalog.painPerdu.description.002">pomme, cannelle, caramel</p>
             </div>
         </div>
         <div class="menu-item">
             <div class="placeholder-img">🍓</div>
             <div class="item-info">
                 <div class="item-header">
-                    <h3 class="item-name">Fruits rouge</h3>
+                    <h3 class="item-name" data-catalog-key="catalog.painPerdu.name.003">Fruits rouge</h3>
                     <span class="item-price">60 dh</span>
                 </div>
-                <p class="item-desc">boule de glace</p>
+                <p class="item-desc" data-catalog-key="catalog.painPerdu.description.003">boule de glace</p>
             </div>
         </div>
         <div class="menu-item">
             <div class="placeholder-img">🍮</div>
             <div class="item-info">
                 <div class="item-header">
-                    <h3 class="item-name">Caramel beurre salée</h3>
+                    <h3 class="item-name" data-catalog-key="catalog.painPerdu.name.004">Caramel beurre salée</h3>
                     <span class="item-price">55 dh</span>
                 </div>
-                <p class="item-desc">banane caramélisée, glace vanille</p>
+                <p class="item-desc" data-catalog-key="catalog.painPerdu.description.004">banane caramélisée, glace vanille</p>
             </div>
         </div>
     </section>
     <!-- قسم كيك سان سباستيان Saint Sebastian -->
-    <section class="menu-category">
-        <h2 class="category-title">Saint Sebastian</h2>
+    <section class="menu-category" data-category-id="saintSebastian">
+        <h2 class="category-title" data-translate="saintSebastianTitle">Saint Sebastian</h2>
         <div class="menu-item">
             <div class="placeholder-img">🍰</div>
             <div class="item-info">
                 <div class="item-header">
-                    <h3 class="item-name">Classique</h3>
+                    <h3 class="item-name" data-catalog-key="catalog.saintSebastian.name.001">Classique</h3>
                     <span class="item-price">45 dh</span>
                 </div>
             </div>
@@ -1138,74 +1136,74 @@
             <div class="placeholder-img">🍫</div>
             <div class="item-info">
                 <div class="item-header">
-                    <h3 class="item-name">Cœur fondant</h3>
+                    <h3 class="item-name" data-catalog-key="catalog.saintSebastian.name.002">Cœur fondant</h3>
                     <span class="item-price">60 dh</span>
                 </div>
-                <p class="item-desc">fruits rouge</p>
+                <p class="item-desc" data-catalog-key="catalog.saintSebastian.description.001">fruits rouge</p>
             </div>
         </div>
         <div class="menu-item">
             <div class="placeholder-img">✨</div>
             <div class="item-info">
                 <div class="item-header">
-                    <h3 class="item-name">Basque brûlé maison</h3>
+                    <h3 class="item-name" data-catalog-key="catalog.saintSebastian.name.003">Basque brûlé maison</h3>
                     <span class="item-price">50 dh</span>
                 </div>
             </div>
         </div>
     </section>
 <!-- قسم الوافل Nos Gaufres -->
-    <section class="menu-category">
-        <h2 class="category-title">Nos Gaufres</h2>
+    <section class="menu-category" data-category-id="waffles">
+        <h2 class="category-title" data-translate="gaufresTitle">Nos Gaufres</h2>
         <div class="menu-item">
             <div class="placeholder-img">🧇</div>
             <div class="item-info">
                 <div class="item-header">
-                    <h3 class="item-name">Berry d'Alysse</h3>
+                    <h3 class="item-name" data-catalog-key="catalog.waffles.name.001">Berry d'Alysse</h3>
                     <span class="item-price">55 dh</span>
                 </div>
-                <p class="item-desc">fruits rouges, boule de glace</p>
+                <p class="item-desc" data-catalog-key="catalog.waffles.description.001">fruits rouges, boule de glace</p>
             </div>
         </div>
         <div class="menu-item">
             <div class="placeholder-img">🧇</div>
             <div class="item-info">
                 <div class="item-header">
-                    <h3 class="item-name">Gaufre liégeoise cocktail</h3>
+                    <h3 class="item-name" data-catalog-key="catalog.waffles.name.002">Gaufre liégeoise cocktail</h3>
                     <span class="item-price">35 dh</span>
                 </div>
-                <p class="item-desc">triple chocolat / miel amande / swetties, lotus, crème chantilly</p>
+                <p class="item-desc" data-catalog-key="catalog.waffles.description.002">triple chocolat / miel amande / swetties, lotus, crème chantilly</p>
             </div>
         </div>
     </section>
     <!-- قسم البان كيك Nos Pancakes -->
-    <section class="menu-category">
-        <h2 class="category-title">Nos Pancakes</h2>
+    <section class="menu-category" data-category-id="pancakes">
+        <h2 class="category-title" data-translate="pancakesTitle">Nos Pancakes</h2>
         <div class="menu-item">
             <div class="placeholder-img">🥞</div>
             <div class="item-info">
                 <div class="item-header">
-                    <h3 class="item-name">Chocobanana</h3>
+                    <h3 class="item-name" data-catalog-key="catalog.pancakes.name.001">Chocobanana</h3>
                     <span class="item-price">59 dh</span>
                 </div>
-                <p class="item-desc">banane, chocolat fondu</p>
+                <p class="item-desc" data-catalog-key="catalog.pancakes.description.001">banane, chocolat fondu</p>
             </div>
         </div>
         <div class="menu-item">
             <div class="placeholder-img">🥞</div>
             <div class="item-info">
                 <div class="item-header">
-                    <h3 class="item-name">Humer</h3>
+                    <h3 class="item-name" data-catalog-key="catalog.pancakes.name.002">Humer</h3>
                     <span class="item-price">65 dh</span>
                 </div>
-                <p class="item-desc">Sirop d'érable, gran-muesli</p>
+                <p class="item-desc" data-catalog-key="catalog.pancakes.description.002">Sirop d'érable, gran-muesli</p>
             </div>
         </div>
         <div class="menu-item">
             <div class="placeholder-img">🍓</div>
             <div class="item-info">
                 <div class="item-header">
-                    <h3 class="item-name">Fruit rouges</h3>
+                    <h3 class="item-name" data-catalog-key="catalog.pancakes.name.003">Fruit rouges</h3>
                     <span class="item-price">59 dh</span>
                 </div>
             </div>
@@ -1214,31 +1212,31 @@
             <div class="placeholder-img">🥞</div>
             <div class="item-info">
                 <div class="item-header">
-                    <h3 class="item-name">Pull me</h3>
+                    <h3 class="item-name" data-catalog-key="catalog.pancakes.name.004">Pull me</h3>
                     <span class="item-price">59 dh</span>
                 </div>
-                <p class="item-desc">kunafa pistache, chocolat au choix</p>
+                <p class="item-desc" data-catalog-key="catalog.pancakes.description.003">kunafa pistache, chocolat au choix</p>
             </div>
         </div>
     </section>
     <!-- قسم الكريب Nos Crêpes -->
-    <section class="menu-category">
-        <h2 class="category-title">Nos Crêpes</h2>
+    <section class="menu-category" data-category-id="crepes">
+        <h2 class="category-title" data-translate="crepesTitle">Nos Crêpes</h2>
         <div class="menu-item">
             <div class="placeholder-img">🫔</div>
             <div class="item-info">
                 <div class="item-header">
-                    <h3 class="item-name">Spaghetti plaisir sucrée</h3>
+                    <h3 class="item-name" data-catalog-key="catalog.crepes.name.001">Spaghetti plaisir sucrée</h3>
                     <span class="item-price">35 dh</span>
                 </div>
-                <p class="item-desc">lotus, Boule de glace</p>
+                <p class="item-desc" data-catalog-key="catalog.crepes.description.001">lotus, Boule de glace</p>
             </div>
         </div>
         <div class="menu-item">
             <div class="placeholder-img">🍫</div>
             <div class="item-info">
                 <div class="item-header">
-                    <h3 class="item-name">Crêpe tradition au chocolat fondu</h3>
+                    <h3 class="item-name" data-catalog-key="catalog.crepes.name.002">Crêpe tradition au chocolat fondu</h3>
                     <span class="item-price">32 dh</span>
                 </div>
             </div>
@@ -1247,7 +1245,7 @@
             <div class="placeholder-img">🍫</div>
             <div class="item-info">
                 <div class="item-header">
-                    <h3 class="item-name">Crêpe trois chocolats</h3>
+                    <h3 class="item-name" data-catalog-key="catalog.crepes.name.003">Crêpe trois chocolats</h3>
                     <span class="item-price">45 dh</span>
                 </div>
             </div>
@@ -1256,103 +1254,103 @@
             <div class="placeholder-img">🥜</div>
             <div class="item-info">
                 <div class="item-header">
-                    <h3 class="item-name">Crêpe snickers</h3>
+                    <h3 class="item-name" data-catalog-key="catalog.crepes.name.004">Crêpe snickers</h3>
                     <span class="item-price">48 dh</span>
                 </div>
             </div>
         </div>
     </section>
 <!-- قسم الكوكتيلات Cocktail -->
-    <section class="menu-category">
-        <h2 class="category-title">Cocktail</h2>
+    <section class="menu-category" data-category-id="cocktails">
+        <h2 class="category-title" data-translate="cocktailTitle">Cocktail</h2>
         <div class="menu-item">
             <div class="placeholder-img">🍹</div>
             <div class="item-info">
                 <div class="item-header">
-                    <h3 class="item-name">Exotique</h3>
+                    <h3 class="item-name" data-catalog-key="catalog.cocktails.name.001">Exotique</h3>
                     <span class="item-price">39 dh</span>
                 </div>
-                <p class="item-desc">Ananas, Mangue, kiwi</p>
+                <p class="item-desc" data-catalog-key="catalog.cocktails.description.001">Ananas, Mangue, kiwi</p>
             </div>
         </div>
         <div class="menu-item">
             <div class="placeholder-img">🍹</div>
             <div class="item-info">
                 <div class="item-header">
-                    <h3 class="item-name">Pina Colada</h3>
+                    <h3 class="item-name" data-catalog-key="catalog.cocktails.name.002">Pina Colada</h3>
                     <span class="item-price">41 dh</span>
                 </div>
-                <p class="item-desc">Ananas, lait de Coco</p>
+                <p class="item-desc" data-catalog-key="catalog.cocktails.description.002">Ananas, lait de Coco</p>
             </div>
         </div>
         <div class="menu-item">
             <div class="placeholder-img">🍹</div>
             <div class="item-info">
                 <div class="item-header">
-                    <h3 class="item-name">Strawberry Colada</h3>
+                    <h3 class="item-name" data-catalog-key="catalog.cocktails.name.003">Strawberry Colada</h3>
                     <span class="item-price">45 dh</span>
                 </div>
-                <p class="item-desc">Ananas, lait de Coco, Strawberry</p>
+                <p class="item-desc" data-catalog-key="catalog.cocktails.description.003">Ananas, lait de Coco, Strawberry</p>
             </div>
         </div>
         <div class="menu-item">
             <div class="placeholder-img">🍹</div>
             <div class="item-info">
                 <div class="item-header">
-                    <h3 class="item-name">Bora Bora</h3>
+                    <h3 class="item-name" data-catalog-key="catalog.cocktails.name.004">Bora Bora</h3>
                     <span class="item-price">36 dh</span>
                 </div>
-                <p class="item-desc">ananas, fruit de passion, citron, grenadine</p>
+                <p class="item-desc" data-catalog-key="catalog.cocktails.description.004">ananas, fruit de passion, citron, grenadine</p>
             </div>
         </div>
         <div class="menu-item">
             <div class="placeholder-img">🍹</div>
             <div class="item-info">
                 <div class="item-header">
-                    <h3 class="item-name">Rose Rouge</h3>
+                    <h3 class="item-name" data-catalog-key="catalog.cocktails.name.005">Rose Rouge</h3>
                     <span class="item-price">45 dh</span>
                 </div>
-                <p class="item-desc">Framboise, Myrtille, Fraise, Ananas</p>
+                <p class="item-desc" data-catalog-key="catalog.cocktails.description.005">Framboise, Myrtille, Fraise, Ananas</p>
             </div>
         </div>
         <div class="menu-item">
             <div class="placeholder-img">🍸</div>
             <div class="item-info">
                 <div class="item-header">
-                    <h3 class="item-name">Mojito Classique</h3>
+                    <h3 class="item-name" data-catalog-key="catalog.cocktails.name.006">Mojito Classique</h3>
                     <span class="item-price">32 dh</span>
                 </div>
-                <p class="item-desc">Citron, Menthe, Canne</p>
+                <p class="item-desc" data-catalog-key="catalog.cocktails.description.006">Citron, Menthe, Canne</p>
             </div>
         </div>
         <div class="menu-item">
             <div class="placeholder-img">🍸</div>
             <div class="item-info">
                 <div class="item-header">
-                    <h3 class="item-name">Mojito Fruit rouge</h3>
+                    <h3 class="item-name" data-catalog-key="catalog.cocktails.name.007">Mojito Fruit rouge</h3>
                     <span class="item-price">45 dh</span>
                 </div>
-                <p class="item-desc">Fraise, myrtille, framboise</p>
+                <p class="item-desc" data-catalog-key="catalog.cocktails.description.007">Fraise, myrtille, framboise</p>
             </div>
         </div>
         <div class="menu-item">
             <div class="placeholder-img">🍸</div>
             <div class="item-info">
                 <div class="item-header">
-                    <h3 class="item-name">Mojito Bleu Lagoon</h3>
+                    <h3 class="item-name" data-catalog-key="catalog.cocktails.name.008">Mojito Bleu Lagoon</h3>
                     <span class="item-price">45 dh</span>
                 </div>
             </div>
         </div>
     </section>
     <!-- قسم العصائر Jus -->
-    <section class="menu-category">
-        <h2 class="category-title">Jus</h2>
+    <section class="menu-category" data-category-id="juices">
+        <h2 class="category-title" data-translate="jusTitle">Jus</h2>
         <div class="menu-item">
             <div class="placeholder-img">🍊</div>
             <div class="item-info">
                 <div class="item-header">
-                    <h3 class="item-name">Orange</h3>
+                    <h3 class="item-name" data-catalog-key="catalog.juices.name.001">Orange</h3>
                     <span class="item-price">27 dh</span>
                 </div>
             </div>
@@ -1361,7 +1359,7 @@
             <div class="placeholder-img">🍋</div>
             <div class="item-info">
                 <div class="item-header">
-                    <h3 class="item-name">Citron</h3>
+                    <h3 class="item-name" data-catalog-key="catalog.juices.name.002">Citron</h3>
                     <span class="item-price">27 dh</span>
                 </div>
             </div>
@@ -1370,7 +1368,7 @@
             <div class="placeholder-img">🍌</div>
             <div class="item-info">
                 <div class="item-header">
-                    <h3 class="item-name">Banane</h3>
+                    <h3 class="item-name" data-catalog-key="catalog.juices.name.003">Banane</h3>
                     <span class="item-price">28 dh</span>
                 </div>
             </div>
@@ -1379,7 +1377,7 @@
             <div class="placeholder-img">🥑</div>
             <div class="item-info">
                 <div class="item-header">
-                    <h3 class="item-name">Avocat</h3>
+                    <h3 class="item-name" data-catalog-key="catalog.juices.name.004">Avocat</h3>
                     <span class="item-price">35 dh</span>
                 </div>
             </div>
@@ -1388,7 +1386,7 @@
             <div class="placeholder-img">🥑</div>
             <div class="item-info">
                 <div class="item-header">
-                    <h3 class="item-name">Avocat royal</h3>
+                    <h3 class="item-name" data-catalog-key="catalog.juices.name.005">Avocat royal</h3>
                     <span class="item-price">42 dh</span>
                 </div>
             </div>
@@ -1397,7 +1395,7 @@
             <div class="placeholder-img">🥭</div>
             <div class="item-info">
                 <div class="item-header">
-                    <h3 class="item-name">Mangue</h3>
+                    <h3 class="item-name" data-catalog-key="catalog.juices.name.006">Mangue</h3>
                     <span class="item-price">36 dh</span>
                 </div>
             </div>
@@ -1406,7 +1404,7 @@
             <div class="placeholder-img">🥕</div>
             <div class="item-info">
                 <div class="item-header">
-                    <h3 class="item-name">Carotte</h3>
+                    <h3 class="item-name" data-catalog-key="catalog.juices.name.007">Carotte</h3>
                     <span class="item-price">29 dh</span>
                 </div>
             </div>
@@ -1415,7 +1413,7 @@
             <div class="placeholder-img">🍍</div>
             <div class="item-info">
                 <div class="item-header">
-                    <h3 class="item-name">Ananas</h3>
+                    <h3 class="item-name" data-catalog-key="catalog.juices.name.008">Ananas</h3>
                     <span class="item-price">36 dh</span>
                 </div>
             </div>
@@ -1424,7 +1422,7 @@
             <div class="placeholder-img">🍓</div>
             <div class="item-info">
                 <div class="item-header">
-                    <h3 class="item-name">Fraise</h3>
+                    <h3 class="item-name" data-catalog-key="catalog.juices.name.009">Fraise</h3>
                     <span class="item-price">34 dh</span>
                 </div>
             </div>
@@ -1434,20 +1432,20 @@
             <div class="placeholder-img">🍒</div>
             <div class="item-info">
                 <div class="item-header">
-                    <h3 class="item-name">Fruit Rouge</h3>
+                    <h3 class="item-name" data-catalog-key="catalog.juices.name.010">Fruit Rouge</h3>
                     <span class="item-price">38 dh</span>
                 </div>
             </div>
         </div>
     </section>
     <!-- قسم فرابتشينو Frappuccino -->
-    <section class="menu-category">
-        <h2 class="category-title">Frappuccino</h2>
+    <section class="menu-category" data-category-id="frappuccino">
+        <h2 class="category-title" data-translate="frappuccinoTitle">Frappuccino</h2>
         <div class="menu-item">
             <div class="placeholder-img">🧋</div>
             <div class="item-info">
                 <div class="item-header">
-                    <h3 class="item-name">Oreo</h3>
+                    <h3 class="item-name" data-catalog-key="catalog.frappuccino.name.001">Oreo</h3>
                     <span class="item-price">45 dh</span>
                 </div>
             </div>
@@ -1456,7 +1454,7 @@
             <div class="placeholder-img">🍪</div>
             <div class="item-info">
                 <div class="item-header">
-                    <h3 class="item-name">Cookies</h3>
+                    <h3 class="item-name" data-catalog-key="catalog.frappuccino.name.002">Cookies</h3>
                     <span class="item-price">45 dh</span>
                 </div>
             </div>
@@ -1465,98 +1463,98 @@
             <div class="placeholder-img">🧋</div>
             <div class="item-info">
                 <div class="item-header">
-                    <h3 class="item-name">Java chip</h3>
+                    <h3 class="item-name" data-catalog-key="catalog.frappuccino.name.003">Java chip</h3>
                     <span class="item-price">45 dh</span>
                 </div>
             </div>
         </div>
     </section>
 <!-- قسم السموثيز Smoothies -->
-    <section class="menu-category">
-        <h2 class="category-title">Smoothies</h2>
+    <section class="menu-category" data-category-id="smoothies">
+        <h2 class="category-title" data-translate="smoothiesTitle">Smoothies</h2>
         <div class="menu-item">
             <div class="placeholder-img">🥤</div>
             <div class="item-info">
                 <div class="item-header">
-                    <h3 class="item-name">Pêche Melba</h3>
+                    <h3 class="item-name" data-catalog-key="catalog.smoothies.name.001">Pêche Melba</h3>
                     <span class="item-price">45 dh</span>
                 </div>
-                <p class="item-desc">Pêche, Passion, Banane, Noix de coco</p>
+                <p class="item-desc" data-catalog-key="catalog.smoothies.description.001">Pêche, Passion, Banane, Noix de coco</p>
             </div>
         </div>
         <div class="menu-item">
             <div class="placeholder-img">⚡</div>
             <div class="item-info">
                 <div class="item-header">
-                    <h3 class="item-name">Energy Boost</h3>
+                    <h3 class="item-name" data-catalog-key="catalog.smoothies.name.002">Energy Boost</h3>
                     <span class="item-price">46 dh</span>
                 </div>
-                <p class="item-desc">avocat, banane, kiwi, miel</p>
+                <p class="item-desc" data-catalog-key="catalog.smoothies.description.002">avocat, banane, kiwi, miel</p>
             </div>
         </div>
         <div class="menu-item">
             <div class="placeholder-img">🫐</div>
             <div class="item-info">
                 <div class="item-header">
-                    <h3 class="item-name">Blueberry Banana</h3>
+                    <h3 class="item-name" data-catalog-key="catalog.smoothies.name.003">Blueberry Banana</h3>
                     <span class="item-price">42 dh</span>
                 </div>
-                <p class="item-desc">Myrtille, Banane, Coco</p>
+                <p class="item-desc" data-catalog-key="catalog.smoothies.description.003">Myrtille, Banane, Coco</p>
             </div>
         </div>
         <div class="menu-item">
             <div class="placeholder-img">🏖️</div>
             <div class="item-info">
                 <div class="item-header">
-                    <h3 class="item-name">Sun & Beach</h3>
+                    <h3 class="item-name" data-catalog-key="catalog.smoothies.name.004">Sun & Beach</h3>
                     <span class="item-price">46 dh</span>
                 </div>
-                <p class="item-desc">Mangue, Menthe, Passion, Litchi</p>
+                <p class="item-desc" data-catalog-key="catalog.smoothies.description.004">Mangue, Menthe, Passion, Litchi</p>
             </div>
         </div>
     </section>
     <!-- قسم المشروبات الصحية Detox -->
-    <section class="menu-category">
-        <h2 class="category-title">Detox</h2>
+    <section class="menu-category" data-category-id="detox">
+        <h2 class="category-title" data-translate="detoxTitle">Detox</h2>
         <div class="menu-item">
             <div class="placeholder-img">🌿</div>
             <div class="item-info">
                 <div class="item-header">
-                    <h3 class="item-name">Green</h3>
+                    <h3 class="item-name" data-catalog-key="catalog.detox.name.001">Green</h3>
                     <span class="item-price">40 dh</span>
                 </div>
-                <p class="item-desc">citron, pomme, concombre, gingembre</p>
+                <p class="item-desc" data-catalog-key="catalog.detox.description.001">citron, pomme, concombre, gingembre</p>
             </div>
         </div>
         <div class="menu-item">
             <div class="placeholder-img">🥕</div>
             <div class="item-info">
                 <div class="item-header">
-                    <h3 class="item-name">Beetroot</h3>
+                    <h3 class="item-name" data-catalog-key="catalog.detox.name.002">Beetroot</h3>
                     <span class="item-price">42 dh</span>
                 </div>
-                <p class="item-desc">bettrave, pomme, carotte, gingembre</p>
+                <p class="item-desc" data-catalog-key="catalog.detox.description.002">bettrave, pomme, carotte, gingembre</p>
             </div>
         </div>
         <div class="menu-item">
             <div class="placeholder-img">✨</div>
             <div class="item-info">
                 <div class="item-header">
-                    <h3 class="item-name">Bien-être</h3>
+                    <h3 class="item-name" data-catalog-key="catalog.detox.name.003">Bien-être</h3>
                     <span class="item-price">42 dh</span>
                 </div>
-                <p class="item-desc">ananas, gingembre, menthe, citron</p>
+                <p class="item-desc" data-catalog-key="catalog.detox.description.003">ananas, gingembre, menthe, citron</p>
             </div>
         </div>
     </section>
     <!-- قسم الميلك شيك Milkshakes Orangeshakes -->
-    <section class="menu-category">
-        <h2 class="category-title">Milkshakes Orangeshakes</h2>
+    <section class="menu-category" data-category-id="milkshakes">
+        <h2 class="category-title" data-translate="milkshakesTitle">Milkshakes Orangeshakes</h2>
         <div class="menu-item">
             <div class="placeholder-img">🥭</div>
             <div class="item-info">
                 <div class="item-header">
-                    <h3 class="item-name">Mangue</h3>
+                    <h3 class="item-name" data-catalog-key="catalog.milkshakes.name.001">Mangue</h3>
                     <span class="item-price">42 dh</span>
                 </div>
             </div>
@@ -1565,7 +1563,7 @@
             <div class="placeholder-img">🍫</div>
             <div class="item-info">
                 <div class="item-header">
-                    <h3 class="item-name">Chocolat</h3>
+                    <h3 class="item-name" data-catalog-key="catalog.milkshakes.name.002">Chocolat</h3>
                     <span class="item-price">42 dh</span>
                 </div>
             </div>
@@ -1574,7 +1572,7 @@
             <div class="placeholder-img">🥛</div>
             <div class="item-info">
                 <div class="item-header">
-                    <h3 class="item-name">Vanille</h3>
+                    <h3 class="item-name" data-catalog-key="catalog.milkshakes.name.003">Vanille</h3>
                     <span class="item-price">42 dh</span>
                 </div>
             </div>
@@ -1583,7 +1581,7 @@
             <div class="placeholder-img">🍮</div>
             <div class="item-info">
                 <div class="item-header">
-                    <h3 class="item-name">Caramel</h3>
+                    <h3 class="item-name" data-catalog-key="catalog.milkshakes.name.004">Caramel</h3>
                     <span class="item-price">45 dh</span>
                 </div>
             </div>
@@ -1592,7 +1590,7 @@
             <div class="placeholder-img">🍓</div>
             <div class="item-info">
                 <div class="item-header">
-                    <h3 class="item-name">Fraise</h3>
+                    <h3 class="item-name" data-catalog-key="catalog.milkshakes.name.005">Fraise</h3>
                     <span class="item-price">45 dh</span>
                 </div>
             </div>
@@ -1602,13 +1600,13 @@
     <section class="story-page" style="text-align: center; padding: 40px 20px;">
         <div class="story-frame">
             <div class="story-arch">
-                <h2 class="category-title" style="margin-bottom: 20px;">REMERCIEMENT</h2>
+                <h2 class="category-title" data-translate="thanksTitle" style="margin-bottom: 20px;">REMERCIEMENT</h2>
             </div>
-            <div class="story-content" style="font-style: italic; line-height: 1.8;">
-                <p>chère clientèle</p>
-                <p>Votre confiance et la délicatesse de votre attention<br>envers notre équipe sont pour nous une source d'inspiration infinie.</p>
-                <p>votre précieuse sincérité illumine notre quotidien et nous guide avec la joie de pouvoir faire de chacune de vos visites une expérience mémorable et toujours plus agréable.</p>
-                <p>c'est un plaisir de vous accueillir et nous vous en remercions chaleureusement.</p>
+            <div class="story-content thanks-content">
+                <p data-translate="thanksParagraph1" data-story-key>chère clientèle</p>
+                <p data-translate="thanksParagraph2" data-story-key>Votre confiance et la délicatesse de votre attention<br>envers notre équipe sont pour nous une source d'inspiration infinie.</p>
+                <p data-translate="thanksParagraph3" data-story-key>votre précieuse sincérité illumine notre quotidien et nous guide avec la joie de pouvoir faire de chacune de vos visites une expérience mémorable et toujours plus agréable.</p>
+                <p data-translate="thanksParagraph4" data-story-key>c'est un plaisir de vous accueillir et nous vous en remercions chaleureusement.</p>
             </div>
             <div class="story-signature" style="margin-top: 30px;">
                 <span class="sig-name" style="font-family: 'Playfair Display', serif; font-size: 1.1rem; color: #4a5d51;">L'EQUIPE D'ALYSSE</span>
@@ -1617,7 +1615,6 @@
     </section>
 <script src="catalog-translations.js"></script>
 <script src="script.js"></script>
-<button onclick="scrollToTop()" id="scrollTopBtn" title="العودة إلى الأعلى" aria-label="العودة إلى الأعلى">↑</button>
+<button onclick="scrollToTop()" id="scrollTopBtn" data-translate-label="backToTop" title="العودة إلى الأعلى" aria-label="العودة إلى الأعلى">↑</button>
 </body>
 </html>
-
